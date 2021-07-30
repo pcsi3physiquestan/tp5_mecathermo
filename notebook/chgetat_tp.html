@@ -1,0 +1,510 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. Travaux pratiques &#8212; TP Mécanique et Thermodynamique</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/tp5_mecathermo/notebook/chgetat_tp.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="1. Préliminaires" href="chgetat_preliminaire.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://pcsi3physiquestan.github.io/tp5_mecathermo/notebook/chgetat_tp.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Travaux pratiques" />
+<meta property="og:description" content="Travaux pratiques  Dispositif expérimental  L’appareil utilisé comprend une éprouvette en verre renforcé contenant l’hexafluorure de soufre (SF6), transparent, " />
+
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">TP Mécanique et Thermodynamique</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tp5_mecathermo.html">
+   Mécanique et thermodynamique
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Pendule pesant
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="pendule_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pendule_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Oscillations forcées
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="oscillations_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oscillations_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Chute libre
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chute_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chute_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ann_cineris.html">
+   3. Utilisation du logiciel CINERIS
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Calorimétrie
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="calorimetrie_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calorimetrie_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Changements d'état
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chgetat_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/chgetat_tp.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/chgetat_tp.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/chgetat_tp.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dispositif-experimental">
+   2.1. Dispositif expérimental
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#releve-des-mesures">
+   2.2. Relevé des mesures
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exploitation-des-resultats">
+   2.3. Exploitation des résultats
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#isothermes-d-andrews">
+     2.3.1. Isothermes d’Andrews
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pression-de-vapeur-saturante">
+     2.3.2. Pression de vapeur saturante
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equation-d-etat-du-gaz">
+     2.3.3. Equation d’état du gaz
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#developpement-du-viriel">
+       2.3.3.1. Développement du Viriel
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#quantite-de-matiere">
+       2.3.3.2. Quantité de matière
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dimension-des-molecules-de-sf6">
+       2.3.3.3. Dimension des molécules de SF6.
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="travaux-pratiques">
+<h1><span class="section-number">2. </span>Travaux pratiques<a class="headerlink" href="#travaux-pratiques" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dispositif-experimental">
+<h2><span class="section-number">2.1. </span>Dispositif expérimental<a class="headerlink" href="#dispositif-experimental" title="Permalink to this headline">¶</a></h2>
+<p>L’appareil utilisé comprend une éprouvette en verre renforcé contenant l’hexafluorure de soufre (SF6), transparent, à étudier. On utilise ce fluide car il est inerte et le gaz se liquéfie à des pressions et températures raisonnables (point critique: <span class="math notranslate nohighlight">\(T_c=45,5 ^{\circ}\rm{C}\)</span> et <span class="math notranslate nohighlight">\(p_c=37,6 \rm{bar}\)</span>).</p>
+<p>L’éprouvette est fixée sur une chambre de pression contenant du mercure et fermée par un piston. Le volant situé sous l’appareil agit sur le piston et entraîne le déplacement du mercure dans l’éprouvette, ce qui fait varier le volume de SF6. Un manomètre indique la pression exercée sur le SF6 (en bars, <span class="math notranslate nohighlight">\(1 \rm{bar}=10^5 \rm{Pa}\)</span>). Les graduations gravées sur l’éprouvette permettent la lecture du volume occupé par le SF6 (en <span class="math notranslate nohighlight">\(\rm{cm^3}\)</span>).</p>
+<p>Une cuve transparente est placée autour de l’éprouvette. De l’eau provenant d’un bain thermostaté circule dans la cuve, permettant ainsi d’ajuster la température de l’éprouvette à celle du bain. Un thermomètre monté sur le bain thermostaté mesure la température du bain (en <span class="math notranslate nohighlight">\(^{\circ}\rm{C}\)</span>), et donc, lorsque l’équilibre thermique est atteint, celle du fluide étudié. Le réglage de la température se fait en maintenant appuyée la touche <span class="math notranslate nohighlight">\(\vartheta\)</span> du bain thermostaté et en réglant la température à la valeur voulue grâce à la molette. Relâcher alors la touche <span class="math notranslate nohighlight">\(\vartheta\)</span>, l’afficheur indique la température actuelle du bain, qui évoluera vers la valeur demandée.</p>
+</div>
+<div class="section" id="releve-des-mesures">
+<h2><span class="section-number">2.2. </span>Relevé des mesures<a class="headerlink" href="#releve-des-mesures" title="Permalink to this headline">¶</a></h2>
+<p>Nous allons étudier l’évolution du SF 6 à température T donnée (isothermes), imposée par le bain thermostaté.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Il est important de respecté un ordre croissant des températures car il est beaucoup plus simple et rapide de chauffer le bain thermostaté que de le refroidir.</p>
+</div>
+<p>Les mesures effectuées par les deux binômes doivent être mises en commun et consignées dans le même fichier Excel dédié: télécharger le fichier correspondant depuis le site et l’enregistrer sous le nouveau nom <code class="docutils literal notranslate"><span class="pre">NOM1NOM2NOM3NOM4.xls</span></code> (où NOMi sont les noms de famille des personnes composant les binômes).</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Pour éviter tout risque d’explosion: NE JAMAIS DéPASSER LA PRESSION MAXIMALE DE 37 BAR. Tourner très lentement le volant en vérifiant en permanence l’augmentation de pression, NOTAMMENT lorsque le SF6 est sous forme liquide.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Relevé des isothermes</p>
+<ol class="simple">
+<li><p>Pour chaque température, vous devrez réaliser l’acquisition du volume de sF6 et de la pression associée. Réaliser une compression lente pour rester à l’équilibre, notamment lorsqu’il y a équilibre-vapeur.</p></li>
+<li><p>Observer à chaque fois l’état du fluide et la reporter dans la feuille Excel (G: Gaz, L: Liquide, LG : Liquide-Gaz).</p></li>
+<li><p>Continuer à comprimer le SF6 (ne pas dépasser 37 bars).</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="exploitation-des-resultats">
+<h2><span class="section-number">2.3. </span>Exploitation des résultats<a class="headerlink" href="#exploitation-des-resultats" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="isothermes-d-andrews">
+<h3><span class="section-number">2.3.1. </span>Isothermes d’Andrews<a class="headerlink" href="#isothermes-d-andrews" title="Permalink to this headline">¶</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Exploitation</p>
+<ol class="simple">
+<li><p>Dans la feuille de calcul d’Excel `` Isothermes ‘’, observer le tracé du réseau des isothermes OBTENUES PAR LES DEUX BINÔMES dans le diagramme de Watt (p en fonction de V).</p></li>
+<li><p>Commenter l’allure du réseau d’isothermes obtenu. Indiquer sur le graphique les différentes phases présentes (gaz, liquide, ou les deux).</p></li>
+<li><p>Comparer les variations de pression avec le volume lorsque le SF 6 est sous forme uniquement liquide et lorsqu’il est sous forme uniquement gazeuse. Proposer une explication.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="pression-de-vapeur-saturante">
+<h3><span class="section-number">2.3.2. </span>Pression de vapeur saturante<a class="headerlink" href="#pression-de-vapeur-saturante" title="Permalink to this headline">¶</a></h3>
+<p>Lorsque le gaz est en équilibre avec le liquide, on dit que le gaz (ou vapeur) est une vapeur saturante. Sa pression est appelée pression de vapeur saturante, notée <span class="math notranslate nohighlight">\(p_{sat} (T)\)</span>, pression maximale que peut atteindre une vapeur et qui correspond également à la pression à laquelle s’effectue le changement d’état. La pression de vapeur saturante dépend de la température et suit la loi de RANKINE, où T désigne la température absolue, en kelvins:</p>
+<div class="math notranslate nohighlight">
+\[
+p_{sat}=a e^{-bT}
+\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Exploitation</p>
+<ol class="simple">
+<li><p>Relever la valeur de la pression de vapeur saturante psat pour l’ensemble des 6 isothermes et noter les résultats dans la feuille de calcul `` Psat ‘’ prévue dans le fichier Excel.</p></li>
+<li><p>Sous Excel, tracer <span class="math notranslate nohighlight">\(\ln(p_{sat})\)</span> en fonction de T et déterminer si la loi de RANKINE est vérifiée.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="equation-d-etat-du-gaz">
+<h3><span class="section-number">2.3.3. </span>Equation d’état du gaz<a class="headerlink" href="#equation-d-etat-du-gaz" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="developpement-du-viriel">
+<h4><span class="section-number">2.3.3.1. </span>Développement du Viriel<a class="headerlink" href="#developpement-du-viriel" title="Permalink to this headline">¶</a></h4>
+<p>Dans la feuille de calcul Equation d’état, les calculs de pV et de 1/V lorsque le SF 6 est sous forme gazeuse s’effectuent automatiquement. Il faudra néamoins supprimer les parties correspondant au liquide et liquide-gaz.</p>
+<div class="tip admonition">
+<p class="admonition-title">Exploitation</p>
+<ol class="simple">
+<li><p>En utilisant les courbes obtenues, préciser si le SF6 peut être modélisé par un gaz parfait.</p></li>
+</ol>
+</div>
+<p>Une modélisation plus fine que celle du gaz parfait permet d’obtenir l’équation d’état suivante, par un développement en séries en 1/V (développement du Viriel) au premier ordre:</p>
+<div class="math notranslate nohighlight">
+\[
+pV = nRT (1+\frac{B(T)}{V})
+\]</div>
+<p>où n est la quantité de matière dans le volume V, R la constante des gaz parfaits (<span class="math notranslate nohighlight">\(R=8,314 \rm{J.K^{-1}.mol^{-1}}\)</span>), T la température absolue en kelvins et B une fonction de T, dépendant du fluide.</p>
+<div class="tip admonition">
+<p class="admonition-title">Exploitation</p>
+<ol class="simple">
+<li><p>Sous Excel, pour chaque isotherme, ajuster les points de mesure par une courbe de tendance linéaire et obtenir l’équation de la droite correspondante (de la forme y=bx+a ou y représente pV et x représente 1/V).</p></li>
+<li><p>Imprimer le graphe de pV en fonction de 1/V contenant les régressions linéaires. Le gaz considéré suit-il l’équation d’état proposée avec le développement du Viriel?</p></li>
+<li><p>Dans la feuille de calcul `` n et rho ‘’ du fichier Excel, Noter les pentes et ordonnées à l’origine. Ne pas oublier de préciser les unités pour chaque colonne. Quelle est la dimension de <span class="math notranslate nohighlight">\(B(T)\)</span>?</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="quantite-de-matiere">
+<h4><span class="section-number">2.3.3.2. </span>Quantité de matière<a class="headerlink" href="#quantite-de-matiere" title="Permalink to this headline">¶</a></h4>
+<div class="tip admonition">
+<p class="admonition-title">Exploitation</p>
+<ol class="simple">
+<li><p>Qu’attend-on des valeurs de <span class="math notranslate nohighlight">\(n\)</span> trouvées pour chaque isothermes?</p></li>
+<li><p>Déduire des régressions linéaires la quantité de matière n pour chaque isothermes. Recopier les résultats dans le compte-rendu. Les résultats semblent-ils cohérents?</p></li>
+<li><p>Calculer la quantité de matière moyenne nmoy, utiliser les formules du polycopié sur les incertitudes (incertitude de Type A) pour estimer l’incertitude de la quantité de matière.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="dimension-des-molecules-de-sf6">
+<h4><span class="section-number">2.3.3.3. </span>Dimension des molécules de SF6.<a class="headerlink" href="#dimension-des-molecules-de-sf6" title="Permalink to this headline">¶</a></h4>
+<p>Pour un gaz donné, le coefficient B dépend de la température T, mais également de la quantité de matière n (on dit qu’il est extensif). Nous allons donc plutôt étudier le coefficient B molaire, <span class="math notranslate nohighlight">\(b_{mol} = B/n_{moy}\)</span>, ne dépendant plus de n (intensif). On peut montrer que <span class="math notranslate nohighlight">\(b_{mol}\)</span> peut s’écrire en première approximation:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-80055610-3cd7-4361-891c-683293d98a38">
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-80055610-3cd7-4361-891c-683293d98a38" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+  b_{mol}(T)=b_0 + b_1 \frac{1}{T}
+\end{equation}\]</div>
+<p>où <span class="math notranslate nohighlight">\(b_0\)</span> dépend du “rayon” <span class="math notranslate nohighlight">\(\rho\)</span> de la molécule et <span class="math notranslate nohighlight">\(b_1\)</span> de l’énergie potentielle d’interaction entre deux molécules.</p>
+<p>Dans une modélisation de type “sphères dures” : <span class="math notranslate nohighlight">\(b_0 =(2/3) \pi \rho^3 N_A\)</span> avec <span class="math notranslate nohighlight">\(N_A\)</span> la constante d’Avogadro.</p>
+<div class="tip admonition">
+<p class="admonition-title">Exploitation</p>
+<p>Pour chaque isotherme, déduire B(T) des droites de régression. Déterminer alors <span class="math notranslate nohighlight">\(b_{mol}(T)\)</span>. Tracer <span class="math notranslate nohighlight">\(b_{mol}\)</span> en fonction de 1/T (avec T en kelvin) et ajuster les points par une droite de régression. En déduire le rayon <span class="math notranslate nohighlight">\(\rho\)</span> des molécules de SF6. Comparer avec la valeur tabulée: <span class="math notranslate nohighlight">\(6,39.10^{-10}\rm{m}\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="chgetat_preliminaire.html" title="previous page"><span class="section-number">1. </span>Préliminaires</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

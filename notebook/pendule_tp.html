@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. Travaux pratiques &#8212; TP Mécanique et Thermodynamique</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/tp5_mecathermo/notebook/pendule_tp.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="1. Préliminaires" href="oscillations_preliminaire.html" />
+    <link rel="prev" title="1. Préliminaires" href="pendule_preliminaire.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://pcsi3physiquestan.github.io/tp5_mecathermo/notebook/pendule_tp.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Travaux pratiques" />
+<meta property="og:description" content="Travaux pratiques  Note : Pour ce TP, on n’étudiera pas les incertitudes de mesure.  Étalonnage du dispositif de mesure  On pourra acquérir la tension u(t) à l’" />
+
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">TP Mécanique et Thermodynamique</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tp5_mecathermo.html">
+   Mécanique et thermodynamique
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Pendule pesant
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="pendule_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Oscillations forcées
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="oscillations_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oscillations_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Chute libre
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chute_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chute_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ann_cineris.html">
+   3. Utilisation du logiciel CINERIS
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Calorimétrie
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="calorimetrie_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calorimetrie_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Changements d'état
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chgetat_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chgetat_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/pendule_tp.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/pendule_tp.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/pendule_tp.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#etalonnage-du-dispositif-de-mesure">
+   2.1. Étalonnage du dispositif de mesure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#etude-sans-frottements">
+   2.2. Etude sans frottements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cas-harmonique">
+     2.2.1. Cas harmonique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cas-d-un-amortissement-fluide">
+     2.2.2. Cas d’un amortissement fluide
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cas-d-un-amortissement-solide">
+     2.2.3. Cas d’un amortissement solide
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="travaux-pratiques">
+<h1><span class="section-number">2. </span>Travaux pratiques<a class="headerlink" href="#travaux-pratiques" title="Permalink to this headline">¶</a></h1>
+<p><em>Note : Pour ce TP, on n’étudiera pas les incertitudes de mesure.</em></p>
+<div class="section" id="etalonnage-du-dispositif-de-mesure">
+<h2><span class="section-number">2.1. </span>Étalonnage du dispositif de mesure<a class="headerlink" href="#etalonnage-du-dispositif-de-mesure" title="Permalink to this headline">¶</a></h2>
+<p>On pourra acquérir la tension <span class="math notranslate nohighlight">\(u(t)\)</span> à l’aide d’une console d’acquisition numérique et le signal sera alors traité avec le logiciel <code class="docutils literal notranslate"><span class="pre">Atelier</span> <span class="pre">Scientifique</span></code>.</p>
+<ul class="simple">
+<li><p>Installer l’alimentation du potentiomètre et brancher la borne de mesure (avec sa référence) sur la console d’acquisition.</p></li>
+<li><p>La relation entre la tension <span class="math notranslate nohighlight">\(u(t)\)</span> et l’angle <span class="math notranslate nohighlight">\(\theta(t)\)</span> est affine. Grâce à deux mesures conjointes de l’angle et de la tension, déterminer la relation entre les deux grandeurs.</p></li>
+<li><p>Créer une grandeur correspondant à l’angle dans le logiciel (<code class="docutils literal notranslate"><span class="pre">Traitement</span> <span class="pre">des</span> <span class="pre">données</span></code>).</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Une partie du traitement numérique se fera directement dans l’Atelier scientifique. Ainsi, après la première acquisition de <span class="math notranslate nohighlight">\(u(t)\)</span> (en régime harmonique) et le calcul de <span class="math notranslate nohighlight">\(\theta(t)\)</span>, il faudra :</p>
+<ul class="simple">
+<li><p>réaliser le lissage de la grandeur (créer une grandeur <code class="docutils literal notranslate"><span class="pre">thetal</span></code> dans <code class="docutils literal notranslate"><span class="pre">Traitement</span> <span class="pre">des</span> <span class="pre">données</span> <span class="pre">-</span> <span class="pre">Lissage</span></code>. On choisira la méthode BSPLine en ajustant le degré des polynômes à l’oeil.)</p></li>
+<li><p>calculer la dérivée numérique (<code class="docutils literal notranslate"><span class="pre">Traitement</span> <span class="pre">des</span> <span class="pre">données</span> <span class="pre">-</span> <span class="pre">Dérivation</span></code>)</p></li>
+</ul>
+<p><strong>Après chaque nouvelle acquisition, il n’est pas nécessaire de reconfigurer les grandeurs mais il faudra relancer manuellement le calcul (<code class="docutils literal notranslate"><span class="pre">Traitement</span> <span class="pre">des</span> <span class="pre">données</span></code>).</strong></p>
+</div>
+</div>
+<div class="section" id="etude-sans-frottements">
+<h2><span class="section-number">2.2. </span>Etude sans frottements<a class="headerlink" href="#etude-sans-frottements" title="Permalink to this headline">¶</a></h2>
+<p>Dans cette partie on n’imposera aucun frottement (ni solide, ni fluide). Les choix des paramètres d’acquisition sont laissés libres. Il est juste conseillé de ne pas prendre une fréquence d’échantillonnage trop grande pour éviter les bruits électromagnétiques.</p>
+<div class="section" id="cas-harmonique">
+<h3><span class="section-number">2.2.1. </span>Cas harmonique<a class="headerlink" href="#cas-harmonique" title="Permalink to this headline">¶</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Manipulation</p>
+<ol class="simple">
+<li><p>Réaliser l’acquisition de <span class="math notranslate nohighlight">\(\theta(t)\)</span> pour le pendule sans frottements avec une amplitude d’oscillations faible (environ 10 à <span class="math notranslate nohighlight">\(20^{\circ}\)</span>). On placer la masse à l’extrémité du pendule – veillez à bien la fixer et on mesurera précisément sa position.</p></li>
+<li><p>Vérifier sur l’allure temporelle (lissée) de l’angle et de la vitesse angulaire que l’hypothèse harmonique est acceptable visuellement.</p></li>
+</ol>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Influence du moment d’inertie</p>
+<p>Proposer un protocole expérimental permettant de vérifier la relation entre la période et le moment d’inertie donné dans l’étude préliminaire. Procéder à la vérification de cette relation.</p>
+<p><strong>La masse linéaire n’étant pas connue, il faudra réaliser une mesure préliminaire statique de <span class="math notranslate nohighlight">\(\lambda\)</span>.</strong></p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Etude de l’harmonicité du système</p>
+<p>Un modèle un peu plus complet propose une relation entre l’amplitude des oscillations et la période:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0406428c-d417-4676-9ff6-ddd546ba9092">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-0406428c-d417-4676-9ff6-ddd546ba9092" title="Permalink to this equation">¶</a></span>\[\begin{align}
+	T =T_0 ( 1+ \frac{\theta_0^2}{16})&amp; &amp;\textrm{(formule de Borda) }
+\end{align}\]</div>
+<p>où <span class="math notranslate nohighlight">\(T_0\)</span> est la période isochrone.</p>
+<ol class="simple">
+<li><p>Procéder à la mesure de la période des oscillations pour des amplitudes grandissantes jusqu’à <span class="math notranslate nohighlight">\(90^{\circ}\)</span> à moment d’inertie constant (placer le masse au milieu de la tige et vérifier qu’elle est bien fixée). Observe-t-on un isochronisme des oscillations ?</p></li>
+<li><p>Vérifier si la loi de Borda est conforme aux mesures.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="cas-d-un-amortissement-fluide">
+<h3><span class="section-number">2.2.2. </span>Cas d’un amortissement fluide<a class="headerlink" href="#cas-d-un-amortissement-fluide" title="Permalink to this headline">¶</a></h3>
+<p>On réalisera un amortissement fluide en remplissant grâce à un système magnétique qui, part induction (cf. cours) occasionne un couple assimilable à des frottements fluides linéaires.</p>
+<div class="tip admonition">
+<p class="admonition-title">Etude du tracé temporel</p>
+<ol class="simple">
+<li><p>Obtenir l’évolution temporelle de l’angle et de la vitesse angulaire et l’analyser. On déterminera, au moyen de méthode qu’on précisera la pseudo-période et le décrément logarithmique associé à ce régime.</p></li>
+<li><p>Déduire des mesures précédentes la pulsation propre et le coefficient d’amortissement du système. Comparer ces résultats au cas sans frottement.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="cas-d-un-amortissement-solide">
+<h3><span class="section-number">2.2.3. </span>Cas d’un amortissement solide<a class="headerlink" href="#cas-d-un-amortissement-solide" title="Permalink to this headline">¶</a></h3>
+<p>Retirer les aimants et serrer la vis permettant la mise en place des frottements solides. On réglera ces frottements de manière à pouvoir observer plusieurs oscillations. On continuera à observer des oscillations aux petits mouvements.</p>
+<div class="tip admonition">
+<p class="admonition-title">Etude du mouvement</p>
+<ol class="simple">
+<li><p>Obtenir l’évolution temporelle du système. Observe-t-on les caractéristiques attendues? Mettre en évidence les différences fondamentales avec le cas de frottements fluides.</p></li>
+<li><p>Par une méthode qu’on précisera, remonter au couple de frottements solides.</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="pendule_preliminaire.html" title="previous page"><span class="section-number">1. </span>Préliminaires</a>
+    <a class='right-next' id="next-link" href="oscillations_preliminaire.html" title="next page"><span class="section-number">1. </span>Préliminaires</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

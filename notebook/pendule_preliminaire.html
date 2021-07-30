@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. Préliminaires &#8212; TP Mécanique et Thermodynamique</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/tp5_mecathermo/notebook/pendule_preliminaire.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. Travaux pratiques" href="pendule_tp.html" />
+    <link rel="prev" title="Mécanique et thermodynamique" href="../tp5_mecathermo.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://pcsi3physiquestan.github.io/tp5_mecathermo/notebook/pendule_preliminaire.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Préliminaires" />
+<meta property="og:description" content="Préliminaires  Présentation du dispositif    Paramétrage du pendule  Le pendule utilisé est constitué d’un cylindre de masse M, pouvant coulisser sur une tige m" />
+
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">TP Mécanique et Thermodynamique</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tp5_mecathermo.html">
+   Mécanique et thermodynamique
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Pendule pesant
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pendule_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Oscillations forcées
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="oscillations_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oscillations_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Chute libre
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chute_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chute_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ann_cineris.html">
+   3. Utilisation du logiciel CINERIS
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Calorimétrie
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="calorimetrie_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calorimetrie_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Changements d'état
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chgetat_preliminaire.html">
+   1. Préliminaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chgetat_tp.html">
+   2. Travaux pratiques
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/pendule_preliminaire.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/pendule_preliminaire.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/pendule_preliminaire.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#presentation-du-dispositif">
+   1.1. Présentation du dispositif
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#systeme-de-mesure">
+   1.2. Système de mesure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mise-en-equation-du-pendule">
+   1.3. Mise en équation du pendule
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cas-sans-frottements">
+     1.3.1. Cas sans frottements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cas-avec-frottements-fluides">
+     1.3.2. Cas avec frottements fluides
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cas-avec-frottements-solides">
+     1.3.3. Cas avec frottements solides
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="preliminaires">
+<h1><span class="section-number">1. </span>Préliminaires<a class="headerlink" href="#preliminaires" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="presentation-du-dispositif">
+<h2><span class="section-number">1.1. </span>Présentation du dispositif<a class="headerlink" href="#presentation-du-dispositif" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" id="parametrage">
+<img alt="../_images/Mecanique_Pendule.jpg" src="../_images/Mecanique_Pendule.jpg" />
+<p class="caption"><span class="caption-number">Fig. 1.1 </span><span class="caption-text">Paramétrage du pendule</span><a class="headerlink" href="#parametrage" title="Permalink to this image">¶</a></p>
+</div>
+<p>Le pendule utilisé est constitué d’un cylindre de masse M, pouvant coulisser sur une tige métallique de masse m. Le pendule est libre de tourner autour d’un axe horizontal (Ox). On notera J le moment d’inertie du pendule par rapport à (Ox).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Un contre-poids est réalisé par un prolongement de la tige de l’autre côté du pivot, d’une longueur <span class="math notranslate nohighlight">\(l_1\)</span>. Une masse <span class="math notranslate nohighlight">\(M_1\)</span> est placée en contre poids à une distance <span class="math notranslate nohighlight">\(L_1\)</span>.</p>
+</div>
+<p>L’état du pendule est entièrement défini par la donnée de <span class="math notranslate nohighlight">\(\theta(t)\)</span> (angle entre la verticale et la tige) et de sa dérivée par rapport au temps <span class="math notranslate nohighlight">\(\dot \theta(t)\)</span> (vitesse angulaire). Les angles seront repérés à partir de la verticale: <span class="math notranslate nohighlight">\(\theta=0\)</span> correspond à la position la plus basse du pendule.</p>
+<p>Il est possible d’exercer des frottements solides au niveau de l’axe de rotation du pendule, à l’aide d’une vis/un serre-joint venant appuyer une lame/un disque métallique sur l’axe de rotation. L’étude des frottements fluides sera quant à elle menée par freinage de l’extrémité du pendule dans de l’eau (utiliser les bacs à cet effet).</p>
+</div>
+<div class="section" id="systeme-de-mesure">
+<h2><span class="section-number">1.2. </span>Système de mesure<a class="headerlink" href="#systeme-de-mesure" title="Permalink to this headline">¶</a></h2>
+<p>La position <span class="math notranslate nohighlight">\(\theta(t)\)</span> du pendule au cours du temps sera acquise automatiquement à l’aide d’un potentiomètre annulaire (voir figure \cref{fig_pendule_potar}).</p>
+<p>Le potentiomètre doit être alimenté par un signal continu (0 V/5 V). Le  point milieu du potentiomètre est solidaire de la tige du pendule. Ainsi, on peut relever la tension <span class="math notranslate nohighlight">\(u(t)\)</span> entre le point milieu et la borne reliée à 0 V, tension qui évolue linéairement avec <span class="math notranslate nohighlight">\(\theta(t)\)</span>.</p>
+<div class="figure align-center" id="potar">
+<img alt="../_images/Mecanique_Pendule_Potentiometre.jpg" src="../_images/Mecanique_Pendule_Potentiometre.jpg" />
+<p class="caption"><span class="caption-number">Fig. 1.2 </span><span class="caption-text">Système de mesure</span><a class="headerlink" href="#potar" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La position correspondant à 0V n’est pas la position la plus basse. La relation <span class="math notranslate nohighlight">\(theta(u)\)</span> est donc affine et nécessitera un étalonnage par deux points au moins.</p>
+</div>
+</div>
+<div class="section" id="mise-en-equation-du-pendule">
+<h2><span class="section-number">1.3. </span>Mise en équation du pendule<a class="headerlink" href="#mise-en-equation-du-pendule" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cas-sans-frottements">
+<h3><span class="section-number">1.3.1. </span>Cas sans frottements<a class="headerlink" href="#cas-sans-frottements" title="Permalink to this headline">¶</a></h3>
+<p>On note M la masse à l’extrémité, m la masse de la tige, l la longueur de la tige et L la distance entre l’axe de rotation et la masse M.</p>
+<p>Côté contre poids, on note les grandeur analogues <span class="math notranslate nohighlight">\(M_1, l_1, L_1\)</span>.</p>
+<p>Le moment d’inertie du pendule par rapport à son axe de rotation (Ox) s’écrit alors:
+[
+J=\frac{\lambda l^3}{3}+ML^2 + \frac{\lambda l_1^3}{3}+M_1 L_1^2
+]
+où <span class="math notranslate nohighlight">\(\lambda\)</span> est la masse linéique de la tige.</p>
+<p>Considérons les conditions initiales <span class="math notranslate nohighlight">\(\theta(0)=\theta_0\)</span> et <span class="math notranslate nohighlight">\(\dot \theta(0)=\dot \theta_0\)</span>. En l’absence de frottements, le pendule suit l’équation suivante:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-85c548a6-ff14-4c54-80cf-6de6b27a3397">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-85c548a6-ff14-4c54-80cf-6de6b27a3397" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+  J \ddot{\theta}=(-(\lambda \frac{l^2}{2} + ML) + (\lambda \frac{l_1^2}{2} + M_1 L_1))g \sin \theta
+\end{equation}\]</div>
+<p>soit:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-3f4bea20-20a8-4f37-9aff-13d91db8b4bc">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-3f4bea20-20a8-4f37-9aff-13d91db8b4bc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+  \ddot{\theta}+\omega_0^2 \theta = 0
+\end{equation}\]</div>
+<p>avec</p>
+<div class="math notranslate nohighlight">
+\[
+\omega_0 = \sqrt{\frac{\lambda l^2/2+ML - \lambda l_1^2/2+M_1 L_1}{\lambda l^3/3 + ML^2 + \lambda l_1^3/3 + M_1 L_1^2}}
+\]</div>
+<p>Au petites oscillations, le système se comporte comme un oscillateur harmonique et est isochrone. Ce n’est plus le cas aux fortes oscillations.</p>
+</div>
+<div class="section" id="cas-avec-frottements-fluides">
+<h3><span class="section-number">1.3.2. </span>Cas avec frottements fluides<a class="headerlink" href="#cas-avec-frottements-fluides" title="Permalink to this headline">¶</a></h3>
+<p>Si l’on suppose les frottements fluides linéaires, on peut leur associer un couple suivant l’axe de rotation: <span class="math notranslate nohighlight">\(\Gamma_f =-\Lambda \dot \theta\)</span>. L’équation du mouvement devient alors:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-4a0ea02a-7bd4-421b-84fa-d5effe6eb017">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-4a0ea02a-7bd4-421b-84fa-d5effe6eb017" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+  \ddot{\theta}+2 \sigma \dot \theta +\omega_0^2 \theta = 0
+\end{equation}\]</div>
+<p>avec <span class="math notranslate nohighlight">\(\sigma = \frac{\Lambda}{2J}\)</span>.</p>
+<p>Pour de petites oscillations, on retrouve l’équation d’un oscillateur amorti classique. <span class="math notranslate nohighlight">\(\sigma\)</span> étant le coefficient d’amortissement. Dans le cas d’un régime pseudo-périodique, on peut alors relier la pseudo-période et le décrément logarithmique (cf. cours) à la pulsation propre et au coefficient d’amortissement.</p>
+</div>
+<div class="section" id="cas-avec-frottements-solides">
+<h3><span class="section-number">1.3.3. </span>Cas avec frottements solides<a class="headerlink" href="#cas-avec-frottements-solides" title="Permalink to this headline">¶</a></h3>
+<p>Dans le cas de frottements solides sur l’axe de rotation, la force de frottements est indépendante de la norme de la vitesse, et son sens, toujours opposé au vecteur vitesse. Appliquée sur l’axe du pendule, elle exerce sur celui-ci un couple de freinage: <span class="math notranslate nohighlight">\(\Gamma_s=-\epsilon \Gamma \overrightarrow{u_x}\)</span> où <span class="math notranslate nohighlight">\(\epsilon\)</span> vaut <span class="math notranslate nohighlight">\(\pm 1\)</span> suivant le signe de la vitesse, de manière à ce que le couple soit toujours résistant.</p>
+<p>L’équation du mouvement devient alors:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-2d6bc351-2f51-4928-8edf-e5b95c9b63e3">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-2d6bc351-2f51-4928-8edf-e5b95c9b63e3" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+  \ddot{\theta}+\omega_0^2 \theta = -\epsilon A \theta_0^2
+\end{equation}\]</div>
+<p>avec <span class="math notranslate nohighlight">\(A=\frac{\Gamma}{J \omega_0^2}\)</span>.</p>
+<p>Une étude complète (cf. TD) montre qu’on observe alors des oscillations de pseudo-période égale à la période propre et d’amplitude décroissante. La décroissance est linéaire et l’écart entre deux maxima positifs successives vaut: <span class="math notranslate nohighlight">\(\Delta\theta=-4A\)</span>. Le mouvement se poursuit jusqu’à l’arrêt du pendule.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="../tp5_mecathermo.html" title="previous page">Mécanique et thermodynamique</a>
+    <a class='right-next' id="next-link" href="pendule_tp.html" title="next page"><span class="section-number">2. </span>Travaux pratiques</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
