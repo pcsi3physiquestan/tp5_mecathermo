@@ -87,7 +87,7 @@ Le système d'acquisition sera séparé en deux parties :
     * d'afficher sur un graphique en temps réel l'évolution de T.
     * d'enregistrer à la fin de l'acquisition les données dans un fichier.
 
-````panels
+````{panels}
 ```{figure} ./images/arduino_carte.png
 :name: arduino_carte
 :align: center

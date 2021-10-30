@@ -351,13 +351,13 @@
 <p>Le calorimètre possède une capacité thermique <span class="math notranslate nohighlight">\(C_{cal}\)</span>, éventuellement non négligeable devant celle du système placé à l’intérieur. Il est donc nécessaire de la mesurer avant toute autre chose. On propose l’utilisation de la méthode électrique. On notera <span class="math notranslate nohighlight">\(c_{eau}\)</span> la capacité thermique massique de l’eau liquide.</p>
 <p>On place dans le calorimètre une masse meau connu d’eau et on laisse l’ensemble {calorimètre+eau} établir un équilibre thermique à la température <span class="math notranslate nohighlight">\(T_i\)</span>. On place alors une résistance R au sein du liquide et on l’alimente pendant un temps <span class="math notranslate nohighlight">\(\Delta t\)</span> par une tension U constante. On mesure alors la température finale <span class="math notranslate nohighlight">\(T_f\)</span> lorsque celle-ci s’est stabilisée.</p>
 <p>Un bilan enthalpique (la transformation est monobare entre deux états d’équilibre) entre l’instant initial <span class="math notranslate nohighlight">\(t_i\)</span> et l’instant final <span class="math notranslate nohighlight">\(t_f\)</span> permet d’écrire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-db40b1f7-282c-41aa-9174-1f3cd177c8bd">
-<span class="eqno">(8.1)<a class="headerlink" href="#equation-db40b1f7-282c-41aa-9174-1f3cd177c8bd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b2cc7238-334b-4795-abc6-d0ca4efcb507">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-b2cc7238-334b-4795-abc6-d0ca4efcb507" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T_f-T_i)=\frac{U^2}{R}(t_f-t_i)
 \end{equation}\]</div>
 <p>Si le chauffage est suffisamment lent, on peut alors supposer la transformation quasi-statique et la relation précédente sera vraie durant toute la transformation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-887f5f39-f54a-44bc-b44a-351e7eb0c928">
-<span class="eqno">(8.2)<a class="headerlink" href="#equation-887f5f39-f54a-44bc-b44a-351e7eb0c928" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8de09a9d-be13-450b-9e9f-34ee012876af">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-8de09a9d-be13-450b-9e9f-34ee012876af" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T(t) -T_i)=\frac{U^2}{R}(t-t_i) 
 \end{equation}\]</div>
 </div>
@@ -365,8 +365,8 @@
 <h2><span class="section-number">8.3. </span>Méthode des mélanges<a class="headerlink" href="#methode-des-melanges" title="Permalink to this headline">¶</a></h2>
 <p>Pour mesurer la chaleur latente de fusion de la glace, on va mélanger un système {masse meau d’eau + calorimètre} à la température <span class="math notranslate nohighlight">\(T_1\)</span> avec une masse <span class="math notranslate nohighlight">\(m_{glace}\)</span> de glace à la température de fusion <span class="math notranslate nohighlight">\(T_{fus}(Patm)=0^{\circ}\rm{C}\)</span>.</p>
 <p>En travaillant sur une transformation fictive (fonte isotherme totale des glaçons puis mise à l’équilibre thermique des deux systèmes), le bilan enthalpique s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dbf17d42-6353-4b57-9729-1294c8cb8b11">
-<span class="eqno">(8.3)<a class="headerlink" href="#equation-dbf17d42-6353-4b57-9729-1294c8cb8b11" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e3c6136e-825e-4d84-995f-3f61fd4d51fd">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-e3c6136e-825e-4d84-995f-3f61fd4d51fd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   m_{glace} l_{f,glace} + m_{glace} (T_f -T_{fus})+(C_{cal}+c_{eau} m_{eau}) (T_f -T_1)=0
 \end{equation}\]</div>
 </div>
@@ -411,18 +411,29 @@ T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R}{R_0}\right)}
 </ul>
 </li>
 </ul>
-<div class="highlight-panels notranslate"><div class="highlight"><pre><span></span>```{figure} ./images/arduino_carte.png
-:name: arduino_carte
-:align: center
-Carte Arduino
-```
----
-```{figure} ./images/arduino_grove.png
-:name: arduino_grove
-:align: center
-Shield Grove
-```
-</pre></div>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<div class="figure align-center" id="arduino-carte">
+<img alt="notebook/images/arduino_carte.png" src="notebook/images/arduino_carte.png" />
+<p class="caption"><span class="caption-number">Fig. 8.1 </span><span class="caption-text">Carte Arduino</span><a class="headerlink" href="#arduino-carte" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<div class="figure align-center" id="arduino-grove">
+<img alt="notebook/images/arduino_grove.png" src="notebook/images/arduino_grove.png" />
+<p class="caption"><span class="caption-number">Fig. 8.2 </span><span class="caption-text">Shield Grove</span><a class="headerlink" href="#arduino-grove" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="utilisation-du-microcontrolleur">
 <span id="arduino-pres"></span><h3><span class="section-number">8.5.1. </span>Utilisation du microcontrolleur<a class="headerlink" href="#utilisation-du-microcontrolleur" title="Permalink to this headline">¶</a></h3>
