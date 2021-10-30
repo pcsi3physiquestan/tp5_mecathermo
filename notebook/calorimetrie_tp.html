@@ -49,6 +49,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/tp5_mecathermo/notebook/calorimetrie_tp.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -273,6 +275,16 @@
    9.1. Mise en garde
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mesure-de-la-capacite-thermique-du-calorimetre">
+   9.2. Mesure de la capacité thermique du calorimètre.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mesure-de-la-chaleur-latente-de-fusion-de-la-glace">
+   9.3. Mesure de la chaleur latente de fusion de la glace
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -284,7 +296,8 @@
         
               <div>
                 
-  <div class="section" id="travaux-pratiques">
+  <p><strong>Le téléchargement de ce notebook n’est pas nécessaire.</strong></p>
+<div class="section" id="travaux-pratiques">
 <h1><span class="section-number">9. </span>Travaux pratiques<a class="headerlink" href="#travaux-pratiques" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="mise-en-garde">
 <h2><span class="section-number">9.1. </span>Mise en garde<a class="headerlink" href="#mise-en-garde" title="Permalink to this headline">¶</a></h2>
@@ -295,7 +308,72 @@
 <li><p>les manipuler avec soin</p></li>
 <li><p>ne pas les poser n’importe comment sur la paillasse</p></li>
 <li><p>NE LES ALIMENTER QUE SI ELLES PLONGENT DANS L’EAU</p></li>
+<li><p>Mesurer au multimètre la résistance avant de procéder aux branchements (la mesure au multimèrte ne nécessite pas qu’elles soient plongées dans l’eau).</p></li>
 </ul>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Chaque manipulations dure au moins 15 minutes en plus de la mise en place et l’eau va changer de tempérarure. Il est donc délicat de refaire les manipulations s’il y a eu erreur.</p>
+<p><strong>Il est donc important de bien lire l’ensemble de la manipulation à réaliser AVANT de commencer pour ne pas se tromper.</strong></p>
+</div>
+</div>
+<div class="section" id="mesure-de-la-capacite-thermique-du-calorimetre">
+<h2><span class="section-number">9.2. </span>Mesure de la capacité thermique du calorimètre.<a class="headerlink" href="#mesure-de-la-capacite-thermique-du-calorimetre" title="Permalink to this headline">¶</a></h2>
+<p>Le calorimètre possède une capacité thermique <span class="math notranslate nohighlight">\(C_{cal}\)</span>, éventuellement non négligeable devant celle du système placé à l’intérieur. Il est donc nécessaire de la mesurer avant toute autre chose. On propose l’utilisation de la méthode des mélanges. On notera <span class="math notranslate nohighlight">\(c_{eau}\)</span> la capacité thermique massique de l’eau liquide.</p>
+<blockquote>
+<div><p>Mise en place du dispositif :</p>
+<ol class="simple">
+<li><p>Mise en place du dispositif: Introduire dans le calorimètre une masse de 700g d’eau environ (la peser précisément au moyen d’une balance). Fermer le calorimètre avec le couvercle constitué de plusieurs résistances chauffantes. Placer la sonde de température dans le trou prévu à cet effet et le brancher sur le microcontrolleur et relier ce dernier à l’ordinateur. S’assurer à la fermeture que le thermocouple est bien plongé dans l’eau et ne touche ni les résistances, ni l’agitateur lors de son mouvement.</p></li>
+<li><p>Procéder comme présenté <a class="reference internal" href="calorimetrie_preliminaire.html#arduino-pres"><span class="std std-ref">précédemment</span></a> pour programmer le microcontrolleur</p></li>
+<li><p>Mise en place de l’alimentation: Brancher, <strong>générateur éteint</strong>, l’alimentation stabilisée à disposition entre les bornes correspondant à la résistance de <span class="math notranslate nohighlight">\(4 \Omega\)</span> (Vérifier sa valeur à l’Ohmmètre, utiliser celle de <span class="math notranslate nohighlight">\(2 \Omega\)</span> sinon). Tourner au maximum la molette de réglage de l’intensité pour que le générateur fonctionne comme une source idéale de tension. Tourner au minimum la molette de réglage de tension.</p></li>
+</ol>
+</div></blockquote>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>On sera très prudent lors de la manipulation du circuit car les courants qui circulent sont important et on est en présence d’eau. <strong>TOUTE MANIPULATION DU DISPOSITIF (autre que l’utilisation de l’ordinateur) DEVRA SE FAIRE ALIMENTATION ETEINTE.</strong></p>
+</div>
+<p>L’acquisition va se faire en 3 étapes :</p>
+<ol class="simple">
+<li><p>Mesure de la température de l’eau pendant 2 minutes sans allumer l’alimentation.</p></li>
+<li><p>Allumage de l’alimentation pour délivrer une tension de 10V environ (utiliser la molette de réglage de tension). <strong>Ne pas dépasser 12V.</strong> Noter alors les valeurs de tension et d’intensité pour le calcul de puissance.  <em>Noter précisément le temps d’allumage (qui s’affiche dans la console Python)</em></p></li>
+<li><p>Au bout de 10 minutes, extinction de l’alimentation. On laisse encore l’acquisition touerner jusqu’à un total de 15 minutes pour être sûr que l’équilibre thermique est réalisé. <em>Noter précisément le temps d’extinction (qui s’affiche dans la console Python)</em></p></li>
+</ol>
+<blockquote>
+<div><p>Acquisition :</p>
+<ol class="simple">
+<li><p>Modifier la durée d’observation <code class="docutils literal notranslate"><span class="pre">t_obs</span></code> (15 minutes, attention, la durée est en millisecondes) et le nom du fichier d’enregistrement dans le programme Python.</p></li>
+<li><p>Lancer le programme Python pour lancer l’acquisition.</p></li>
+<li><p>Au bout de 2 minutes, allumer l’alimentation</p></li>
+<li><p>Au bout de 10 minute, éteindre l’alimentation puis laisser l’acquisition aller à son terme.</p></li>
+</ol>
+</div></blockquote>
+<div class="tip admonition">
+<p class="admonition-title">Exploitation des résultats</p>
+<ol class="simple">
+<li><p>Observation l’allure de <span class="math notranslate nohighlight">\(T(t)\)</span>. Peut-on supposer que la transformation a été quasi-statique?</p></li>
+<li><p>Déterminer à partir du fichier de données la capacités thermiques du calorimètre. On estimera les sources d’incertitudes ainsi que leur expressions puis on calculera l’incertitude sur <span class="math notranslate nohighlight">\(C_{cal}\)</span> par <strong>propagation des variances</strong>.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="mesure-de-la-chaleur-latente-de-fusion-de-la-glace">
+<h2><span class="section-number">9.3. </span>Mesure de la chaleur latente de fusion de la glace<a class="headerlink" href="#mesure-de-la-chaleur-latente-de-fusion-de-la-glace" title="Permalink to this headline">¶</a></h2>
+<p>On désire mesure la chaleur latente massique de fusion de la glace à pression atmosphérique <span class="math notranslate nohighlight">\(l_{f, glace}\)</span>. On rappelle que cette grandeur correspond à l’enthalpie libérée par le système lors d’un changement d’état isobare (et donc isotherme). On utilise la méthode des mélanges.</p>
+<p><strong>L’introduction de la glace devra être rapide. Il est donc conseillé de bien maîtriser la procédure avant de la réaliser. Tout élève pris entrain de s’amuser avec la glace sera expulsé du TP.</strong></p>
+<blockquote>
+<div><ol class="simple">
+<li><p>On va refaire une acquisition de 15 minutes. <strong>PENSEZ A CHANGER LE NOM DU FICHIER DANS LE SCRIPT POUR NE PAS EFFACER VOS DONNEES PRECEDENTES.</strong></p></li>
+<li><p>Garder le dispositif précédent. Lancer une acquisition de 15 minutes. Au bout de 2 minutes, poser une casserole sur une balance et la tarer. Sortir les glaçons, les piller puis les placer dans la casserole pour environ 200g (la mesure précise sera faite à la fin). Les mettre dans le calorimètre (sans que ça déborde) <strong>Cette manipulation doit être rapide.</strong></p></li>
+<li><p>Mélanger de temps en temps pour accélérer la mise à l’équilibre. Lorsque l’acquisition est terminée, vérifier que l’équilibre thermique a été atteint.</p></li>
+<li><p><strong>NE PAS JETER l’eau.</strong> Peser le contenu du calorimètre. En retranchant la quantité d’eau initialement dans le calorimètre, vous aurez une pesez précise des glaçons.</p></li>
+</ol>
+</div></blockquote>
+<div class="tip admonition">
+<p class="admonition-title">Exploitation des résultats</p>
+<ol class="simple">
+<li><p>Observation l’allure de <span class="math notranslate nohighlight">\(T(t)\)</span>. Peut-on supposer que la transformation a été quasi-statique?</p></li>
+<li><p>Déterminer à partir du fichier de données l’enthalpie massique de fusion de l’eau. On estimera les sources d’incertitudes ainsi que leur expressions puis on calculera l’incertitude sur <span class="math notranslate nohighlight">\(L_{f, glace}\)</span> par <strong>propagation des variances</strong>.</p></li>
+<li><p>Comparer à la valeur tabulée.</p></li>
+</ol>
 </div>
 </div>
 </div>

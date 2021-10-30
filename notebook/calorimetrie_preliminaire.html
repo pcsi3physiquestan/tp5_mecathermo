@@ -285,6 +285,47 @@
    8.3. Méthode des mélanges
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sonde-de-temperature">
+   8.4. Sonde de température
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#systeme-d-acquisition">
+   8.5. Système d’acquisition
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#utilisation-du-microcontrolleur">
+     8.5.1. Utilisation du microcontrolleur
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#branchements">
+       8.5.1.1. Branchements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#programmation-de-la-carte">
+       8.5.1.2. Programmation de la carte
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#acquisition-grace-a-python">
+     8.5.2. Acquisition grâce à Python
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#modification-du-programme-python">
+       8.5.2.1. Modification du programme Python
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -310,13 +351,13 @@
 <p>Le calorimètre possède une capacité thermique <span class="math notranslate nohighlight">\(C_{cal}\)</span>, éventuellement non négligeable devant celle du système placé à l’intérieur. Il est donc nécessaire de la mesurer avant toute autre chose. On propose l’utilisation de la méthode électrique. On notera <span class="math notranslate nohighlight">\(c_{eau}\)</span> la capacité thermique massique de l’eau liquide.</p>
 <p>On place dans le calorimètre une masse meau connu d’eau et on laisse l’ensemble {calorimètre+eau} établir un équilibre thermique à la température <span class="math notranslate nohighlight">\(T_i\)</span>. On place alors une résistance R au sein du liquide et on l’alimente pendant un temps <span class="math notranslate nohighlight">\(\Delta t\)</span> par une tension U constante. On mesure alors la température finale <span class="math notranslate nohighlight">\(T_f\)</span> lorsque celle-ci s’est stabilisée.</p>
 <p>Un bilan enthalpique (la transformation est monobare entre deux états d’équilibre) entre l’instant initial <span class="math notranslate nohighlight">\(t_i\)</span> et l’instant final <span class="math notranslate nohighlight">\(t_f\)</span> permet d’écrire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2c2f9d4f-3220-4996-9e3b-1c208dd8585f">
-<span class="eqno">(8.1)<a class="headerlink" href="#equation-2c2f9d4f-3220-4996-9e3b-1c208dd8585f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-db40b1f7-282c-41aa-9174-1f3cd177c8bd">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-db40b1f7-282c-41aa-9174-1f3cd177c8bd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T_f-T_i)=\frac{U^2}{R}(t_f-t_i)
 \end{equation}\]</div>
 <p>Si le chauffage est suffisamment lent, on peut alors supposer la transformation quasi-statique et la relation précédente sera vraie durant toute la transformation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bd339581-3b75-43c7-a27a-9b3ace56f270">
-<span class="eqno">(8.2)<a class="headerlink" href="#equation-bd339581-3b75-43c7-a27a-9b3ace56f270" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-887f5f39-f54a-44bc-b44a-351e7eb0c928">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-887f5f39-f54a-44bc-b44a-351e7eb0c928" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T(t) -T_i)=\frac{U^2}{R}(t-t_i) 
 \end{equation}\]</div>
 </div>
@@ -324,10 +365,139 @@
 <h2><span class="section-number">8.3. </span>Méthode des mélanges<a class="headerlink" href="#methode-des-melanges" title="Permalink to this headline">¶</a></h2>
 <p>Pour mesurer la chaleur latente de fusion de la glace, on va mélanger un système {masse meau d’eau + calorimètre} à la température <span class="math notranslate nohighlight">\(T_1\)</span> avec une masse <span class="math notranslate nohighlight">\(m_{glace}\)</span> de glace à la température de fusion <span class="math notranslate nohighlight">\(T_{fus}(Patm)=0^{\circ}\rm{C}\)</span>.</p>
 <p>En travaillant sur une transformation fictive (fonte isotherme totale des glaçons puis mise à l’équilibre thermique des deux systèmes), le bilan enthalpique s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f20c5528-2d1a-48f4-99ab-952a3dab68f3">
-<span class="eqno">(8.3)<a class="headerlink" href="#equation-f20c5528-2d1a-48f4-99ab-952a3dab68f3" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dbf17d42-6353-4b57-9729-1294c8cb8b11">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-dbf17d42-6353-4b57-9729-1294c8cb8b11" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   m_{glace} l_{f,glace} + m_{glace} (T_f -T_{fus})+(C_{cal}+c_{eau} m_{eau}) (T_f -T_1)=0
 \end{equation}\]</div>
+</div>
+<div class="section" id="sonde-de-temperature">
+<h2><span class="section-number">8.4. </span>Sonde de température<a class="headerlink" href="#sonde-de-temperature" title="Permalink to this headline">¶</a></h2>
+<p>La mesure de la température sera réalisée par une sonde CTN plongée dans l’eau qui peut-être fixée dans le calorimètre. La sonde est une une thermistance, c’est-à-dire une résistance dont la valeur <span class="math notranslate nohighlight">\(R(T)\)</span> dépend de la température. L’étude de la thermistance montre que la résistance suit le modèle :</p>
+<div class="math notranslate nohighlight">
+\[
+R(T) = R_0 \exp \left(\beta \left(\frac{1}{T} - \frac{1}{T_0}\right)\right)
+\]</div>
+<p>avec <span class="math notranslate nohighlight">\(R_0 = 10 \rm{k\Omega}; \beta = 2836 \rm{K}\)</span> et <span class="math notranslate nohighlight">\(T_0 = 323 \rm{K}\)</span>.</p>
+<p>Le constructeur a déjà monté la thermistance en série avec une résistance <span class="math notranslate nohighlight">\(R_1 = 10 \rm{k\Omega}\)</span> formant ainsi un pont diviseur de tension. Le principe d’utilisation de la thermistance consiste à alimenter le pont diviseur avec une tension <span class="math notranslate nohighlight">\(E_0\)</span> puis mesurer soit la tension aux bornes de la thermistance, soit la tension aux bornes de <span class="math notranslate nohighlight">\(R_1\)</span>. Dans le montage réalisé ici, c’est la tension aux bornes de <span class="math notranslate nohighlight">\(R_1\)</span> qui est mesurée. Une étude du pont diviseur de tension permet d’obtenir la valeur de <span class="math notranslate nohighlight">\(R(T)\)</span> à partir de la valeur mesurée de <span class="math notranslate nohighlight">\(u_{R_1}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+u_{R_1} &amp;= \frac{R_1}{R_1 + R(T)} E\\
+R(T) &amp;= R_1 \left(\frac{E}{u_{R_1}} - 1\right)
+\end{align*}\]</div>
+<p>La température (<strong>en K</strong>)se déduit alors :</p>
+<div class="math notranslate nohighlight">
+\[
+T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R}{R_0}\right)}
+\]</div>
+</div>
+<div class="section" id="systeme-d-acquisition">
+<h2><span class="section-number">8.5. </span>Système d’acquisition<a class="headerlink" href="#systeme-d-acquisition" title="Permalink to this headline">¶</a></h2>
+<p>Des systèmes d’acquisition complets existent mais nous allons utiliser ici un système “fait maison” pour comprendre les différents éléments d’un système d’acquisition. C’est aussi l’occasion de manipuler un microcontrolleur.</p>
+<p>Le système d’acquisition sera séparé en deux parties :</p>
+<ul class="simple">
+<li><p>un (microcontrolleur Arduino)[arduino_carte] muni d’un (shield Grove)[arduino_grove] pour faciliter le branchement de la sonde. Une fois programmé, le microcontrolleur aura pour rôle :</p>
+<ul>
+<li><p>d’alimenter le pont diviseur avec une tension <span class="math notranslate nohighlight">\(E_0 = 5V\)</span></p></li>
+<li><p>de mesurer la tension (grandeur analogique) aux bornes de <span class="math notranslate nohighlight">\(R_1\)</span> puis la convertir en un nombre (représentation binaire de la tension, c’est une conversion analogique numérique) entre 0 (correspondant à 0V) et 1023 (correspondant à 5V).</p></li>
+<li><p>d’envoyer ce nombre à l’ordinateur (sous forme de chaine de caractère)</p></li>
+</ul>
+</li>
+<li><p>un ordinateur et plus précisément un script Python (à ouvrir avec Pyzo ou Spyder) qui a pour rôle :</p>
+<ul>
+<li><p>de récupérer les mesures envoyées par Arduino</p></li>
+<li><p>de calculer la température correspondant à la tension mesurée</p></li>
+<li><p>d’afficher sur un graphique en temps réel l’évolution de T.</p></li>
+<li><p>d’enregistrer à la fin de l’acquisition les données dans un fichier.</p></li>
+</ul>
+</li>
+</ul>
+<div class="highlight-panels notranslate"><div class="highlight"><pre><span></span>```{figure} ./images/arduino_carte.png
+:name: arduino_carte
+:align: center
+Carte Arduino
+```
+---
+```{figure} ./images/arduino_grove.png
+:name: arduino_grove
+:align: center
+Shield Grove
+```
+</pre></div>
+</div>
+<div class="section" id="utilisation-du-microcontrolleur">
+<span id="arduino-pres"></span><h3><span class="section-number">8.5.1. </span>Utilisation du microcontrolleur<a class="headerlink" href="#utilisation-du-microcontrolleur" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="branchements">
+<h4><span class="section-number">8.5.1.1. </span>Branchements<a class="headerlink" href="#branchements" title="Permalink to this headline">¶</a></h4>
+<p>Les branchements sont simplifiées par l’utilisation du shield Grove.</p>
+<ol class="simple">
+<li><p>Si ce dernier n’est pas déjà fixé sur la carte Arduino. Placez le shield sur la carte. <strong>Faire attention à ce que les broches soient bien placées au dessus des trous des bornes avant d’enfoncer la carte de manière à ne pas tordre une broche, ce qui conduirait à un disfonctionnement de la carte (fragile).</strong></p></li>
+<li><p>Le microcontrolleur Arduino peut réaliser deux types de mesures : des mesures logiques (0 ou 1) à l’aide des entrées D1, D2, … et des mesures analogiques (tension entre 0 et 5V) grâce aux bornes A0, A1, … On utilisera donc ces dernières. Brancher la connectique de la sonde (appelée connectique Grove) sur l’une des entrées analogiques (PIN) en notant le numéro (A0, A1, …) correspondant.</p></li>
+<li><p>Installer la sonde dans le montage voulu (ici le montage de calorimétrie) puis brancher la carte Arduino à l’ordinateur. La carte devrait s’allumer signalant qu’elle alimentée.</p></li>
+</ol>
+</div>
+<div class="section" id="programmation-de-la-carte">
+<h4><span class="section-number">8.5.1.2. </span>Programmation de la carte<a class="headerlink" href="#programmation-de-la-carte" title="Permalink to this headline">¶</a></h4>
+<p>Pour l’instant, le microcontrolleur est alimenté mais il ne remplit pas son rôle, il réalise le dernier programme enregistré qui n’est probablement pas le bon. Il faut <em>programmer le microcontrolleur</em> en <em>téléversant</em> un programme dans sa mémoire.</p>
+<p>La syntaxe utilisée par les microcontrolleurs Arduino est un dérivé du C++ et il n’est pas nécessaire de comprendre ce langage pour le TP. Vous devez par contre téléverser le programme dans Arduino.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Le logiciel Arduino sera disponible sur les ordinateurs de la salle de TP. Sachez néanmoins qu’il est libre et peut-être (télécharger)[<a class="reference external" href="https://www.arduino.cc/en/software">https://www.arduino.cc/en/software</a>] sur le site officiel et installé sur votre propre ordinateur.</p>
+<p><em>Attention par contre si vous désirez utiliser votre propre ordinateur pour brancher la carte Arduino en TP. Il faudra installer la bibliothèque <code class="docutils literal notranslate"><span class="pre">pyserial</span></code> qui n’est pas installée par défaut par Anaconda.</em> La procédure d’installation n’est pas donnée ici.</p>
+</div>
+<ol class="simple">
+<li><p>Sur le <a class="reference external" href="https://stanislas.edunao.com/mod/folder/view.php?id=13511&amp;forceview=1">site</a>, télécharger le dossier complet. Vous y trouvez deux programmes Python sur lesquels nous reviendrons par la suite et un dossier <code class="docutils literal notranslate"><span class="pre">sonde_ctn</span></code> contenant un fichier <code class="docutils literal notranslate"><span class="pre">.ino</span></code> : c’est le programme que vous allez téléverser dans la carte.</p></li>
+<li><p>Ouvrir le logiciel Arduino puis ouvrir le fichier <code class="docutils literal notranslate"><span class="pre">sonde_ctn.ino</span></code> que vous venez de télécharger.</p></li>
+<li><p>Il n’est pas nécessaire de comprendre ce programme, vous devez juste repérer la ligne à est définie le PIN de de branchement de la sonde (A0, A1…). Remplacer le par celui où vous avez branché la sonde.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Vérifier</span></code> que le programme est correct (premier bouton de la barre d’outil). S’il n’y a pas de message d’erreur, passez à l’étape suivante, sinon appeler l’enseignant.</p></li>
+<li><p>Dans <code class="docutils literal notranslate"><span class="pre">Outils</span> <span class="pre">&gt;</span> <span class="pre">Port</span></code>, choisir celui proposé correspondant à la carte Arduino. Notez au passage son nom car vous pourriez en avoir besoin pour la partie Python.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Téléverser</span></code> ensuite votre programme dans la carte (deuxième bouton de la barre d’outil).</p></li>
+<li><p>S’il n’y a pas d’erreur, votre carte a commencé à envoyer les mesures de température ainsi que l’intervalle de temps entre deux mesures. Vous pouvez le vérifier en ouvrant le moniteur série (bouton tout à gauche de la barre d’outil) puis choisir 115200 baud dans le menu en bas à droite. Vous devriez voir s’afficher les mesures de temps et de température.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L’acquisition par un microcontrolleur se fait toujours de la même manière :</p>
+<ul class="simple">
+<li><p>Alimention du capteur si nécessaire</p></li>
+<li><p>Mesure (analogique ou numérique) de la grandeur voulue</p></li>
+<li><p>Traitement de la grandeur si nécessaire (le cas si la mesure est numérique)</p></li>
+<li><p>Envoi de la donnée ou utilisation (si le microcontrolleur doit contrôler un actionneur)</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="acquisition-grace-a-python">
+<h3><span class="section-number">8.5.2. </span>Acquisition grâce à Python<a class="headerlink" href="#acquisition-grace-a-python" title="Permalink to this headline">¶</a></h3>
+<p>On pourrait se limiter au moniteur série pour recueillir la température initiale et finale mais on va faire mieux au moyen de Python : on va afficher en temps réel</p>
+<p>La bibliothèques <code class="docutils literal notranslate"><span class="pre">pyserial</span></code> permet à un script Python de se connecter à un port série (entrée de l’ordinateur pemettant la communication avec un appareil, ici Arduino) pour les données envoyées par le microcontrolleur. On ne présente pas ici le fonctionnement de cette bibliothèque.</p>
+<p>Dans le dossier que vous avez téléchargé, vous trouverez deux fichiers Python :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">scope.py</span></code> contient la fonction qui utilise la bibliothèques <code class="docutils literal notranslate"><span class="pre">pyserial</span></code> pour lire les données et un objet Scope qui va gérer l’affichage en temps réel des mesures sur un graphique. Ce fichier <strong>n’est à modifier sous aucun pretexte.</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">acquisition_duino.py</span></code> contient les fonctions permettant d’obtenir la température à partir des données renvoyées puis d’afficher <span class="math notranslate nohighlight">\(T(t)\)</span>. C’est <strong>ce fichier que vous allez devoir modifier en partie puis exécuter.</strong></p></li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Le fichier que vous exécuterez fait appel au premier. Il <strong>faut donc que les deux fichiers soient bien enregistrés dans le même répertoire.</strong></p>
+</div>
+<div class="section" id="modification-du-programme-python">
+<h4><span class="section-number">8.5.2.1. </span>Modification du programme Python<a class="headerlink" href="#modification-du-programme-python" title="Permalink to this headline">¶</a></h4>
+<p>La majeure partie du programme est déjà écrite. Elle est divisée en trois parties :</p>
+<ol class="simple">
+<li><p>Les fonctions permettant de passer de la représentation binaire à la tension en volt (<code class="docutils literal notranslate"><span class="pre">CNA</span></code>), de la tension <span class="math notranslate nohighlight">\(u\)</span> à la résistance <span class="math notranslate nohighlight">\(R(T)\)</span> (<code class="docutils literal notranslate"><span class="pre">Rdiv</span></code>) puis de la valeur de la résistance à la température <span class="math notranslate nohighlight">\(T\)</span> (<code class="docutils literal notranslate"><span class="pre">Tth</span></code>).</p>
+<ul class="simple">
+<li><p>Modifier les valeurs numériques des différentes grandeurs en fonction des données précédentes.</p></li>
+<li><p>Modifir la durée d’observation <code class="docutils literal notranslate"><span class="pre">t_obs</span></code> et le nom du fichier <code class="docutils literal notranslate"><span class="pre">nom_fichier</span></code> dans lequel les données seront enregistrées (pensez à modifier ces deux grandeurs pour chaque acquisition pour éviter d’écraser un précédent fichier).</p></li>
+<li><p>Modifier les trois fonctions pour qu’elles renvoient bien ce qu’on attend.</p></li>
+</ul>
+</li>
+<li><p>Une fonction <code class="docutils literal notranslate"><span class="pre">read_data</span></code>qui va gérer la lecture du port série et le calcul de la température grâce aux fonctions précédentes. Cette partie n’est pas à modifier.</p></li>
+<li><p>Un tracé en temps réel. Cette partie n’est pas non plus à modifier.</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Une fois l’exécution du script lancé, vous ne pourrez plus modifié les paramètres et l’acquisition est longue donc vérifiez que tout est bon avant de lancer le programme.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 
