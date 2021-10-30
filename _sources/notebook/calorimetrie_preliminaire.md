@@ -88,13 +88,13 @@ Le système d'acquisition sera séparé en deux parties :
     * d'enregistrer à la fin de l'acquisition les données dans un fichier.
 
 ````{panels}
-```{figure} ./images/arduino_carte.png
+```{figure} ./images/arduino_carte.jpg
 :name: arduino_carte
 :align: center
 Carte Arduino
 ```
 ---
-```{figure} ./images/arduino_grove.png
+```{figure} ./images/arduino_grove.jpg
 :name: arduino_grove
 :align: center
 Shield Grove
