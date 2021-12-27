@@ -140,10 +140,10 @@ L'acquisition par un microcontrolleur se fait toujours de la même manière :
 ### Acquisition grâce à Python
 On pourrait se limiter au moniteur série pour recueillir la température initiale et finale mais on va faire mieux au moyen de Python : on va afficher en temps réel $T(t)$.
 
-La bibliothèques `pyserial` permet à un script Python de se connecter à un port série (entrée de l'ordinateur pemettant la communication avec un appareil, ici Arduino) pour les données envoyées par le microcontrolleur. On ne présente pas ici le fonctionnement de cette bibliothèque.
+La bibliothèques `pyserial` permet à un script Python de se connecter à un port série (entrée de l'ordinateur pemettant la communication avec un appareil, ici Arduino) pour recevoir les données envoyées par le microcontrolleur. On ne présente pas ici le fonctionnement de cette bibliothèque.
 
 Dans le dossier que vous avez téléchargé, vous trouverez deux fichiers Python :
-* `scope.py` contient la fonction qui utilise la bibliothèque `pyserial` pour lire les données et un objet Scope qui va gérer l'affichage en temps réel des mesures sur un graphique. Ce fichier __n'est à modifier sous aucun pretexte.__
+* `scope.py` contient la fonction qui utilise la bibliothèque `pyserial` pour lire les données et un objet Scope qui va gérer l'affichage en temps réel des mesures sur un graphique. Ce fichier __n'est à modifier sous aucun pretexte.__ _Son contenu n'est pas à comprendre._
 * `acquisition_duino.py` contient les fonctions permettant d'obtenir la température à partir des données renvoyées puis d'afficher $T(t)$. C'est __ce fichier que vous allez devoir modifier en partie puis exécuter.__
 
 ````{attention}
@@ -160,7 +160,7 @@ La majeure partie du programme est déjà écrite. Elle est divisée en trois pa
     * Modifier les valeurs numériques des différentes grandeurs en fonction des données précédentes.
     * Modifir la durée d'observation `t_obs` et le nom du fichier `nom_fichier` dans lequel les données seront enregistrées (pensez à modifier ces deux grandeurs pour chaque acquisition pour éviter d'écraser un précédent fichier).
     * Modifier les trois fonctions pour qu'elles renvoient bien ce qu'on attend.
-2. Une fonction `read_data` qui va gérer la lecture du port série et le calcul de la température grâce aux fonctions précédentes. Cette partie n'est pas à modifier.
+2. Une fonction `f_traitement` et un objet `Communication` qui vont gérer la lecture du port série et le calcul de la température grâce aux fonctions précédentes. _Cette partie n'est pas à modifier._
 3. Un tracé en temps réel. Cette partie n'est pas non plus à modifier.
 
 ````{important}
