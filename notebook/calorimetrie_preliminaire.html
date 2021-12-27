@@ -356,13 +356,13 @@
 <p>Le calorimètre possède une capacité thermique <span class="math notranslate nohighlight">\(C_{cal}\)</span>, éventuellement non négligeable devant celle du système placé à l’intérieur. Il est donc nécessaire de la mesurer avant toute autre chose. On propose l’utilisation de la méthode électrique. On notera <span class="math notranslate nohighlight">\(c_{eau}\)</span> la capacité thermique massique de l’eau liquide.</p>
 <p>On place dans le calorimètre une masse <span class="math notranslate nohighlight">\(m_{eau}\)</span> connu d’eau et on laisse l’ensemble {calorimètre+eau} établir un équilibre thermique à la température <span class="math notranslate nohighlight">\(T_i\)</span>. On place alors une résistance R au sein du liquide et on l’alimente pendant un temps <span class="math notranslate nohighlight">\(\Delta t\)</span> par une tension U constante. On mesure alors la température finale <span class="math notranslate nohighlight">\(T_f\)</span> lorsque celle-ci s’est stabilisée.</p>
 <p>Un bilan enthalpique (la transformation est monobare entre deux états d’équilibre) entre l’instant initial <span class="math notranslate nohighlight">\(t_i\)</span> et l’instant final <span class="math notranslate nohighlight">\(t_f\)</span> permet d’écrire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-58a8dc3d-7e14-474f-b791-3da213afdba9">
-<span class="eqno">(8.1)<a class="headerlink" href="#equation-58a8dc3d-7e14-474f-b791-3da213afdba9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c8e38ab2-9de3-4c9e-9de9-f2107339a9e2">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-c8e38ab2-9de3-4c9e-9de9-f2107339a9e2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T_f-T_i)=\frac{U^2}{R}(t_f-t_i)
 \end{equation}\]</div>
 <p>Si le chauffage est suffisamment lent, on peut alors supposer la transformation quasi-statique et la relation précédente sera vraie durant toute la transformation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-eea1c01a-e871-4cea-8a6c-de3d3db1dc7f">
-<span class="eqno">(8.2)<a class="headerlink" href="#equation-eea1c01a-e871-4cea-8a6c-de3d3db1dc7f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5ce4b340-c79c-4f60-867b-e55bf05ca3df">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-5ce4b340-c79c-4f60-867b-e55bf05ca3df" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T(t) -T_i)=\frac{U^2}{R}(t-t_i) 
 \end{equation}\]</div>
 </div>
@@ -370,8 +370,8 @@
 <h2><span class="section-number">8.3. </span>Méthode des mélanges<a class="headerlink" href="#methode-des-melanges" title="Permalink to this headline">¶</a></h2>
 <p>Pour mesurer la chaleur latente de fusion de la glace, on va mélanger un système {eau + calorimètre} à la température <span class="math notranslate nohighlight">\(T_1\)</span> avec une masse <span class="math notranslate nohighlight">\(m_{glace}\)</span> de glace à la température de fusion <span class="math notranslate nohighlight">\(T_{fus}(Patm)=0^{\circ}\rm{C}\)</span>.</p>
 <p>En travaillant sur une transformation fictive (fonte isotherme totale des glaçons puis mise à l’équilibre thermique des deux systèmes), le bilan enthalpique s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b21b9d19-7af9-4202-ba9f-2eb1d1b00c15">
-<span class="eqno">(8.3)<a class="headerlink" href="#equation-b21b9d19-7af9-4202-ba9f-2eb1d1b00c15" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1a22a9f9-7dc2-4227-8b74-c5e43bddd69b">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-1a22a9f9-7dc2-4227-8b74-c5e43bddd69b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   m_{glace} l_{f,glace} + m_{glace} c_{eau} (T_f -T_{fus})+(C_{cal}+c_{eau} m_{eau}) (T_f -T_1)=0
 \end{equation}\]</div>
 </div>
@@ -392,7 +392,7 @@ R(T) &amp;= R_1 \left(\frac{E}{u_{R_1}} - 1\right)
 <p>La température (<strong>en K</strong>)se déduit alors :</p>
 <div class="math notranslate nohighlight">
 \[
-T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R}{R_0}\right)}^{-1}
+T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R(T)}{R_0}\right)}^{-1}
 \]</div>
 </div>
 <div class="section" id="systeme-d-acquisition">
