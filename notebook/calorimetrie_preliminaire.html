@@ -356,13 +356,13 @@
 <p>Le calorimètre possède une capacité thermique <span class="math notranslate nohighlight">\(C_{cal}\)</span>, éventuellement non négligeable devant celle du système placé à l’intérieur. Il est donc nécessaire de la mesurer avant toute autre chose. On propose l’utilisation de la méthode électrique. On notera <span class="math notranslate nohighlight">\(c_{eau}\)</span> la capacité thermique massique de l’eau liquide.</p>
 <p>On place dans le calorimètre une masse <span class="math notranslate nohighlight">\(m_{eau}\)</span> connu d’eau et on laisse l’ensemble {calorimètre+eau} établir un équilibre thermique à la température <span class="math notranslate nohighlight">\(T_i\)</span>. On place alors une résistance R au sein du liquide et on l’alimente pendant un temps <span class="math notranslate nohighlight">\(\Delta t\)</span> par une tension U constante. On mesure alors la température finale <span class="math notranslate nohighlight">\(T_f\)</span> lorsque celle-ci s’est stabilisée.</p>
 <p>Un bilan enthalpique (la transformation est monobare entre deux états d’équilibre) entre l’instant initial <span class="math notranslate nohighlight">\(t_i\)</span> et l’instant final <span class="math notranslate nohighlight">\(t_f\)</span> permet d’écrire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-87471a50-0265-41b0-a7ef-db4ef362f826">
-<span class="eqno">(8.1)<a class="headerlink" href="#equation-87471a50-0265-41b0-a7ef-db4ef362f826" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-13d70241-9814-4d6c-b75d-77c6f96a1196">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-13d70241-9814-4d6c-b75d-77c6f96a1196" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T_f-T_i)=\frac{U^2}{R}(t_f-t_i)
 \end{equation}\]</div>
 <p>Si le chauffage est suffisamment lent, on peut alors supposer la transformation quasi-statique et la relation précédente sera vraie durant toute la transformation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b60e1f15-26ef-4984-ad0f-75ae78f61f0d">
-<span class="eqno">(8.2)<a class="headerlink" href="#equation-b60e1f15-26ef-4984-ad0f-75ae78f61f0d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b6b30d27-6947-4e59-acb1-bd3c4e1372e8">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-b6b30d27-6947-4e59-acb1-bd3c4e1372e8" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T(t) -T_i)=\frac{U^2}{R}(t-t_i) 
 \end{equation}\]</div>
 </div>
@@ -370,8 +370,8 @@
 <h2><span class="section-number">8.3. </span>Méthode des mélanges<a class="headerlink" href="#methode-des-melanges" title="Permalink to this headline">¶</a></h2>
 <p>Pour mesurer la chaleur latente de fusion de la glace, on va mélanger un système {eau + calorimètre} à la température <span class="math notranslate nohighlight">\(T_1\)</span> avec une masse <span class="math notranslate nohighlight">\(m_{glace}\)</span> de glace à la température de fusion <span class="math notranslate nohighlight">\(T_{fus}(Patm)=0^{\circ}\rm{C}\)</span>.</p>
 <p>En travaillant sur une transformation fictive (fonte isotherme totale des glaçons puis mise à l’équilibre thermique des deux systèmes), le bilan enthalpique s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3b3afa63-0d7a-4e46-a418-7f3479f13898">
-<span class="eqno">(8.3)<a class="headerlink" href="#equation-3b3afa63-0d7a-4e46-a418-7f3479f13898" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-31adec1c-4bc1-4452-a2d6-59c2efb21e8b">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-31adec1c-4bc1-4452-a2d6-59c2efb21e8b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   m_{glace} l_{f,glace} + m_{glace} c_{eau} (T_f -T_{fus})+(C_{cal}+c_{eau} m_{eau}) (T_f -T_1)=0
 \end{equation}\]</div>
 </div>
@@ -484,7 +484,7 @@ T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R(T)}{R_0}\right)}^{-1}
 </div>
 <div class="section" id="acquisition-grace-a-python">
 <h3><span class="section-number">8.5.2. </span>Acquisition grâce à Python<a class="headerlink" href="#acquisition-grace-a-python" title="Permalink to this headline">¶</a></h3>
-<p>On pourrait se limiter au moniteur série pour recueillir la température initiale et finale mais on va faire mieux au moyen de Python : on va afficher en temps réel</p>
+<p>On pourrait se limiter au moniteur série pour recueillir la température initiale et finale mais on va faire mieux au moyen de Python : on va afficher en temps réel <span class="math notranslate nohighlight">\(T(t)\)</span>.</p>
 <p>La bibliothèques <code class="docutils literal notranslate"><span class="pre">pyserial</span></code> permet à un script Python de se connecter à un port série (entrée de l’ordinateur pemettant la communication avec un appareil, ici Arduino) pour les données envoyées par le microcontrolleur. On ne présente pas ici le fonctionnement de cette bibliothèque.</p>
 <p>Dans le dossier que vous avez téléchargé, vous trouverez deux fichiers Python :</p>
 <ul class="simple">
