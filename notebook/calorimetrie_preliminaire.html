@@ -356,13 +356,13 @@
 <p>Le calorimètre possède une capacité thermique <span class="math notranslate nohighlight">\(C_{cal}\)</span>, éventuellement non négligeable devant celle du système placé à l’intérieur. Il est donc nécessaire de la mesurer avant toute autre chose. On propose l’utilisation de la méthode électrique. On notera <span class="math notranslate nohighlight">\(c_{eau}\)</span> la capacité thermique massique de l’eau liquide.</p>
 <p>On place dans le calorimètre une masse <span class="math notranslate nohighlight">\(m_{eau}\)</span> connu d’eau et on laisse l’ensemble {calorimètre+eau} établir un équilibre thermique à la température <span class="math notranslate nohighlight">\(T_i\)</span>. On place alors une résistance R au sein du liquide et on l’alimente pendant un temps <span class="math notranslate nohighlight">\(\Delta t\)</span> par une tension U constante. On mesure alors la température finale <span class="math notranslate nohighlight">\(T_f\)</span> lorsque celle-ci s’est stabilisée.</p>
 <p>Un bilan enthalpique (la transformation est monobare entre deux états d’équilibre) entre l’instant initial <span class="math notranslate nohighlight">\(t_i\)</span> et l’instant final <span class="math notranslate nohighlight">\(t_f\)</span> permet d’écrire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c8e38ab2-9de3-4c9e-9de9-f2107339a9e2">
-<span class="eqno">(8.1)<a class="headerlink" href="#equation-c8e38ab2-9de3-4c9e-9de9-f2107339a9e2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-29fcbc01-e71b-4913-93cd-95f60d45ba3f">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-29fcbc01-e71b-4913-93cd-95f60d45ba3f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T_f-T_i)=\frac{U^2}{R}(t_f-t_i)
 \end{equation}\]</div>
 <p>Si le chauffage est suffisamment lent, on peut alors supposer la transformation quasi-statique et la relation précédente sera vraie durant toute la transformation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5ce4b340-c79c-4f60-867b-e55bf05ca3df">
-<span class="eqno">(8.2)<a class="headerlink" href="#equation-5ce4b340-c79c-4f60-867b-e55bf05ca3df" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-0500b404-78a1-4bd5-84bf-ab536fd07122">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-0500b404-78a1-4bd5-84bf-ab536fd07122" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T(t) -T_i)=\frac{U^2}{R}(t-t_i) 
 \end{equation}\]</div>
 </div>
@@ -370,8 +370,8 @@
 <h2><span class="section-number">8.3. </span>Méthode des mélanges<a class="headerlink" href="#methode-des-melanges" title="Permalink to this headline">¶</a></h2>
 <p>Pour mesurer la chaleur latente de fusion de la glace, on va mélanger un système {eau + calorimètre} à la température <span class="math notranslate nohighlight">\(T_1\)</span> avec une masse <span class="math notranslate nohighlight">\(m_{glace}\)</span> de glace à la température de fusion <span class="math notranslate nohighlight">\(T_{fus}(Patm)=0^{\circ}\rm{C}\)</span>.</p>
 <p>En travaillant sur une transformation fictive (fonte isotherme totale des glaçons puis mise à l’équilibre thermique des deux systèmes), le bilan enthalpique s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1a22a9f9-7dc2-4227-8b74-c5e43bddd69b">
-<span class="eqno">(8.3)<a class="headerlink" href="#equation-1a22a9f9-7dc2-4227-8b74-c5e43bddd69b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5484b699-1cf2-41b4-9fbd-f317faf6f679">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-5484b699-1cf2-41b4-9fbd-f317faf6f679" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   m_{glace} l_{f,glace} + m_{glace} c_{eau} (T_f -T_{fus})+(C_{cal}+c_{eau} m_{eau}) (T_f -T_1)=0
 \end{equation}\]</div>
 </div>
@@ -461,7 +461,7 @@ T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R(T)}{R_0}\right)}^{-1}
 <p><em>Attention, si vous désirez utiliser votre propre ordinateur pour brancher la carte Arduino en TP. Il faudra installer la bibliothèque <code class="docutils literal notranslate"><span class="pre">pyserial</span></code> qui n’est pas installée par défaut par Anaconda.</em> La procédure d’installation n’est pas donnée ici.</p>
 </div>
 <ol class="simple">
-<li><p>Sur le <a class="reference external" href="https://stanislas.edunao.com/mod/folder/view.php?id=13511&amp;forceview=1">site</a>, télécharger le dossier complet. Vous y trouvez deux programmes Python sur lesquels nous reviendrons par la suite et un dossier <code class="docutils literal notranslate"><span class="pre">sonde_ctn</span></code> contenant un fichier <code class="docutils literal notranslate"><span class="pre">.ino</span></code> : c’est le programme que vous allez téléverser dans la carte.</p></li>
+<li><p>Sur le <a class="reference external" href="https://stanislas.edunao.com/mod/folder/view.php?id=13511&amp;forceview=1">site</a>, télécharger le dossier complet (il sera sous forme d’archive qu’il faudra décompresser). Vous y trouvez deux programmes Python sur lesquels nous reviendrons par la suite et un dossier <code class="docutils literal notranslate"><span class="pre">sonde_ctn</span></code> contenant un fichier <code class="docutils literal notranslate"><span class="pre">.ino</span></code> : c’est le programme que vous allez téléverser dans la carte.</p></li>
 <li><p>Ouvrir le logiciel Arduino puis ouvrir le fichier <code class="docutils literal notranslate"><span class="pre">sonde_ctn.ino</span></code> que vous venez de télécharger.</p></li>
 <li><p>Il n’est pas nécessaire de comprendre ce programme, vous devez juste repérer la ligne où est définie le PIN de de branchement de la sonde (A0, A1…). Remplacer le par celui où vous avez branché la sonde.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Vérifier</span></code> que le programme est correct (premier bouton de la barre d’outil). S’il n’y a pas de message d’erreur, passez à l’étape suivante, sinon appeler l’enseignant.</p></li>
