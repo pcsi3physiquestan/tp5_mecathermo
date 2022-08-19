@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>8. Préliminaires &#8212; TP Mécanique et Thermodynamique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,33 +31,36 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/tp5_mecathermo/notebook/calorimetrie_preliminaire.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="9. Travaux pratiques" href="calorimetrie_tp.html" />
     <link rel="prev" title="7. Utilisation du logiciel CINERIS" href="ann_cineris.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -75,13 +78,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">TP Mécanique et Thermodynamique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -90,7 +94,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Pendule pesant
  </span>
@@ -107,7 +111,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Oscillations forcées
  </span>
@@ -124,7 +128,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Chute libre
  </span>
@@ -146,7 +150,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Calorimétrie
  </span>
@@ -163,7 +167,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Changements d'état
  </span>
@@ -268,7 +272,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#description-generale">
@@ -342,7 +346,7 @@
         
               <div>
                 
-  <div class="section" id="preliminaires">
+  <div class="tex2jax_ignore mathjax_ignore section" id="preliminaires">
 <h1><span class="section-number">8. </span>Préliminaires<a class="headerlink" href="#preliminaires" title="Permalink to this headline">¶</a></h1>
 <p>Ce TP comporte deux parties: d’une part l’étude du changement d’état liquide-vapeur du SF6 et d’autre part de la calorimétrie. L’organisation globale du TP nécessite une mise en commun. Faire deux groupes de deux binômes (=groupe de deux élèves). Dans chaque groupe, décidez quel binôme commence par la calorimétrie, et quel binôme commence par les changements d’état. La calorimétrie sera traitée identiquement par les deux groupes.</p>
 <p>La première partie du TP durera 1h30 puis inversion des binômes. La seconde durera aussi 1h30. La dernière heure devra servir à la mise en commun et à l’exploitation des résultats.</p>
@@ -356,13 +360,13 @@
 <p>Le calorimètre possède une capacité thermique <span class="math notranslate nohighlight">\(C_{cal}\)</span>, éventuellement non négligeable devant celle du système placé à l’intérieur. Il est donc nécessaire de la mesurer avant toute autre chose. On propose l’utilisation de la méthode électrique. On notera <span class="math notranslate nohighlight">\(c_{eau}\)</span> la capacité thermique massique de l’eau liquide.</p>
 <p>On place dans le calorimètre une masse <span class="math notranslate nohighlight">\(m_{eau}\)</span> connu d’eau et on laisse l’ensemble {calorimètre+eau} établir un équilibre thermique à la température <span class="math notranslate nohighlight">\(T_i\)</span>. On place alors une résistance R au sein du liquide et on l’alimente pendant un temps <span class="math notranslate nohighlight">\(\Delta t\)</span> par une tension U constante. On mesure alors la température finale <span class="math notranslate nohighlight">\(T_f\)</span> lorsque celle-ci s’est stabilisée.</p>
 <p>Un bilan enthalpique (la transformation est monobare entre deux états d’équilibre) entre l’instant initial <span class="math notranslate nohighlight">\(t_i\)</span> et l’instant final <span class="math notranslate nohighlight">\(t_f\)</span> permet d’écrire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ff4f50f6-5bf7-44cb-9cb5-5059d7cfd68e">
-<span class="eqno">(8.1)<a class="headerlink" href="#equation-ff4f50f6-5bf7-44cb-9cb5-5059d7cfd68e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-61924404-b982-4c8d-9959-b168de158413">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-61924404-b982-4c8d-9959-b168de158413" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T_f-T_i)=\frac{U^2}{R}(t_f-t_i)
 \end{equation}\]</div>
 <p>Si le chauffage est suffisamment lent, on peut alors supposer la transformation quasi-statique et la relation précédente sera vraie durant toute la transformation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f12ee7ee-6ed1-4f48-835c-d8537b1f97ee">
-<span class="eqno">(8.2)<a class="headerlink" href="#equation-f12ee7ee-6ed1-4f48-835c-d8537b1f97ee" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d2c5e063-c095-47fb-9edc-f1d7a91e82bc">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-d2c5e063-c095-47fb-9edc-f1d7a91e82bc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T(t) -T_i)=\frac{U^2}{R}(t-t_i) 
 \end{equation}\]</div>
 </div>
@@ -370,8 +374,8 @@
 <h2><span class="section-number">8.3. </span>Méthode des mélanges<a class="headerlink" href="#methode-des-melanges" title="Permalink to this headline">¶</a></h2>
 <p>Pour mesurer la chaleur latente de fusion de la glace, on va mélanger un système {eau + calorimètre} à la température <span class="math notranslate nohighlight">\(T_1\)</span> avec une masse <span class="math notranslate nohighlight">\(m_{glace}\)</span> de glace à la température de fusion <span class="math notranslate nohighlight">\(T_{fus}(Patm)=0^{\circ}\rm{C}\)</span>.</p>
 <p>En travaillant sur une transformation fictive (fonte isotherme totale des glaçons puis mise à l’équilibre thermique des deux systèmes), le bilan enthalpique s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8ead624b-b9e4-46d3-9d8f-c0ed3e8ed408">
-<span class="eqno">(8.3)<a class="headerlink" href="#equation-8ead624b-b9e4-46d3-9d8f-c0ed3e8ed408" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5d43f150-9b8d-446b-849e-bc5783193f97">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-5d43f150-9b8d-446b-849e-bc5783193f97" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   m_{glace} l_{f,glace} + m_{glace} c_{eau} (T_f -T_{fus})+(C_{cal}+c_{eau} m_{eau}) (T_f -T_1)=0
 \end{equation}\]</div>
 </div>
@@ -554,16 +558,27 @@ Avant de réaliser l’acquisition de 15 minutes comme demandé dans le TP, lanc
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="ann_cineris.html" title="previous page"><span class="section-number">7. </span>Utilisation du logiciel CINERIS</a>
-    <a class='right-next' id="next-link" href="calorimetrie_tp.html" title="next page"><span class="section-number">9. </span>Travaux pratiques</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ann_cineris.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">7. </span>Utilisation du logiciel CINERIS</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="calorimetrie_tp.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Travaux pratiques</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -579,8 +594,7 @@ Avant de réaliser l’acquisition de 15 minutes comme demandé dans le TP, lanc
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>
