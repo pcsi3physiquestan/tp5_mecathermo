@@ -1,47 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Préliminaires &#8212; TP Mécanique et Thermodynamique</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>3. Préliminaires &#8212; TP Mécanique et Thermodynamique</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,57 +64,97 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebook/oscillations_preliminaire';</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/tp5_mecathermo/notebook/oscillations_preliminaire.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4. Travaux pratiques" href="oscillations_tp.html" />
     <link rel="prev" title="2. Travaux pratiques" href="pendule_tp.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">TP Mécanique et Thermodynamique</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+<a class="navbar-brand logo" href="../tp5_mecathermo.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">TP Mécanique et Thermodynamique</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -110,398 +163,237 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Pendule pesant
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Pendule pesant</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="pendule_preliminaire.html">
-   1. Préliminaires
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="pendule_tp.html">
-   2. Travaux pratiques
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="pendule_preliminaire.html">1. Préliminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pendule_tp.html">2. Travaux pratiques</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Oscillations forcées
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Oscillations forcées</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   3. Préliminaires
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="oscillations_tp.html">
-   4. Travaux pratiques
-  </a>
- </li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Préliminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oscillations_tp.html">4. Travaux pratiques</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Chute libre
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Chute libre</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="chute_preliminaire.html">
-   5. Préliminaires
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chute_tp.html">
-   6. Travaux pratiques
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ann_cineris.html">
-   7. Utilisation du logiciel CINERIS
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="chute_preliminaire.html">5. Préliminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chute_tp.html">6. Travaux pratiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ann_cineris.html">7. Utilisation du logiciel CINERIS</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Calorimétrie
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calorimétrie</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="calorimetrie_preliminaire.html">
-   8. Préliminaires
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="calorimetrie_tp.html">
-   9. Travaux pratiques
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="calorimetrie_preliminaire.html">8. Préliminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calorimetrie_tp.html">9. Travaux pratiques</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Changements d'état
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Changements d'état</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="chgetat_preliminaire.html">
-   10. Préliminaires
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chgetat_tp.html">
-   11. Travaux pratiques
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="chgetat_preliminaire.html">10. Préliminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chgetat_tp.html">11. Travaux pratiques</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/oscillations_preliminaire.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebook/oscillations_preliminaire.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/notebook/oscillations_preliminaire.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../_sources/notebook/oscillations_preliminaire.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dispositif-experimental">
-   3.1. Dispositif expérimental
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rappel-theorique">
-   3.2. Rappel théorique
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mise-en-equation">
-     3.2.1. Mise en équation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#reponse-en-amplitude">
-     3.2.2. Réponse en amplitude
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#reponse-en-vitesse">
-     3.2.3. Réponse en vitesse
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Préliminaires</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dispositif-experimental">
-   3.1. Dispositif expérimental
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rappel-theorique">
-   3.2. Rappel théorique
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mise-en-equation">
-     3.2.1. Mise en équation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#reponse-en-amplitude">
-     3.2.2. Réponse en amplitude
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#reponse-en-vitesse">
-     3.2.3. Réponse en vitesse
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Préliminaires</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dispositif-experimental">3.1. Dispositif expérimental</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappel-theorique">3.2. Rappel théorique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mise-en-equation">3.2.1. Mise en équation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reponse-en-amplitude">3.2.2. Réponse en amplitude</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reponse-en-vitesse">3.2.3. Réponse en vitesse</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="preliminaires">
-<h1><span class="section-number">3. </span>Préliminaires<a class="headerlink" href="#preliminaires" title="Permalink to this headline">#</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="preliminaires">
+<h1><span class="section-number">3. </span>Préliminaires<a class="headerlink" href="#preliminaires" title="Permalink to this heading">#</a></h1>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Au cours de cette séance de 4h, vous effectuerez deux TP différents de 1h30: 2 binômes travailleront sur <a class="reference internal" href="chute_preliminaire.html#chute"><span class="std std-ref">la chute d’une bille dans un fluide</span></a> et 2 binômes sur les oscillations mécaniques forcées. Vous devez échanger de postes au bout de 1h30. La dernière heure permettra de mettre en commun et exploiter les résultats.</p>
 </div>
-<div class="section" id="dispositif-experimental">
-<h2><span class="section-number">3.1. </span>Dispositif expérimental<a class="headerlink" href="#dispositif-experimental" title="Permalink to this headline">#</a></h2>
+<section id="dispositif-experimental">
+<h2><span class="section-number">3.1. </span>Dispositif expérimental<a class="headerlink" href="#dispositif-experimental" title="Permalink to this heading">#</a></h2>
 <p>On dispose d’un ressort à suspendre verticalement sur un support comportant une poulie. Un jeu de masses peut être suspendu à l’extrémité inférieure du ressort. Les masses peuvent éventuellement être mises à osciller dans un tube rempli d’eau, appliquant des frottements fluides au dispositif. Des palettes circulaires de rayon plus ou moins important augmentent encore l’effet des frottements.</p>
 <p>L’extrémité supérieure du ressort est attachée à un fil inextensible relié à un moteur qui permet de générer une force quasi-sinusoïdale sur le dispositif (fréquences réglables de 0,1 Hz à 3,0 Hz), contrecarrant la perte énergétique due aux frottements. L’oscillateur fonctionne alors en régime sinusoïdal forcé. Pour les mesures de longueurs du ressort, une réglette graduée s’aimante sur le support et peut être positionnée à l’emplacement souhaité.</p>
-</div>
-<div class="section" id="rappel-theorique">
-<h2><span class="section-number">3.2. </span>Rappel théorique<a class="headerlink" href="#rappel-theorique" title="Permalink to this headline">#</a></h2>
-<div class="section" id="mise-en-equation">
-<h3><span class="section-number">3.2.1. </span>Mise en équation<a class="headerlink" href="#mise-en-equation" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="rappel-theorique">
+<h2><span class="section-number">3.2. </span>Rappel théorique<a class="headerlink" href="#rappel-theorique" title="Permalink to this heading">#</a></h2>
+<section id="mise-en-equation">
+<h3><span class="section-number">3.2.1. </span>Mise en équation<a class="headerlink" href="#mise-en-equation" title="Permalink to this heading">#</a></h3>
 <p>D’après le PFD appliqué à la masse {m} suspendue au ressort de constante de raideur k et de longueur à vide <span class="math notranslate nohighlight">\(l_0\)</span>, dans le référentiel terrestre considéré galiléen:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0c5af12b-aa86-4c56-aecb-0332e4a268e3">
-<span class="eqno">(3.1)<a class="headerlink" href="#equation-0c5af12b-aa86-4c56-aecb-0332e4a268e3" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-42dd5905-d570-4adc-9554-5d6f510d879e">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-42dd5905-d570-4adc-9554-5d6f510d879e" title="Permalink to this equation">#</a></span>\[\begin{equation}
   m \ddot{x} = mg - kx - \lambda \dot{x} +kx_A \cos \omega t
 \end{equation}\]</div>
 <p>soit</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ddab9ced-eed5-4942-b3f7-36d4b4db607e">
-<span class="eqno">(3.2)<a class="headerlink" href="#equation-ddab9ced-eed5-4942-b3f7-36d4b4db607e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c6106dab-04c4-48db-85bc-51ec13d452ec">
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-c6106dab-04c4-48db-85bc-51ec13d452ec" title="Permalink to this equation">#</a></span>\[\begin{equation}
   \ddot{X}+\frac{\lambda}{m} \dot{X} + \frac{k}{m} X = \frac{k}{m} x_A \cos \omega t
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(x(t)\)</span> désigne l’allongement du ressort, <span class="math notranslate nohighlight">\(X(t)\)</span> la longueur du ressort rapportée à sa longueur d’équilibre <span class="math notranslate nohighlight">\(l_{eq}\)</span>, <span class="math notranslate nohighlight">\(\lambda\)</span> le coefficient de frottements fluides et <span class="math notranslate nohighlight">\(x_A \cos(\omega t)\)</span> l’amplitude de vibration de l’autre extrémité du ressort, imposé par le moteur.</p>
-</div>
-<div class="section" id="reponse-en-amplitude">
-<h3><span class="section-number">3.2.2. </span>Réponse en amplitude<a class="headerlink" href="#reponse-en-amplitude" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="reponse-en-amplitude">
+<h3><span class="section-number">3.2.2. </span>Réponse en amplitude<a class="headerlink" href="#reponse-en-amplitude" title="Permalink to this heading">#</a></h3>
 <p>En régime sinusoïdale forcé, on a, en introduisant les notations complexes:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6cd5948e-ac4f-4adb-9a2a-e5c777001cb9">
-<span class="eqno">(3.3)<a class="headerlink" href="#equation-6cd5948e-ac4f-4adb-9a2a-e5c777001cb9" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c1668389-0e97-4122-b08c-df56af59e38c">
+<span class="eqno">(3.3)<a class="headerlink" href="#equation-c1668389-0e97-4122-b08c-df56af59e38c" title="Permalink to this equation">#</a></span>\[\begin{equation}
   \underline{X} = \frac{F/(m \omega_0^2)}{1- {(\frac{\omega}{\omega_0})}^2+j \frac{\omega}{\omega_0 Q}}
 \end{equation}\]</div>
 <p>en posant <span class="math notranslate nohighlight">\(\omega_0^2 = \frac{k}{m}\)</span> la pulsation propre de l’oscillateur et <span class="math notranslate nohighlight">\(Q = \frac{1}{\lambda} \sqrt{km}\)</span> le facteur de qualité. Pour des facteurs de qualité supérieure à <span class="math notranslate nohighlight">\(\frac{1}{ \sqrt{2}}\)</span> on observe un phénomène de résonance à la pulsation: <span class="math notranslate nohighlight">\(\omega_r = \omega_0 \sqrt{1- \frac{1}{2Q^2}}\)</span>.</p>
-</div>
-<div class="section" id="reponse-en-vitesse">
-<h3><span class="section-number">3.2.3. </span>Réponse en vitesse<a class="headerlink" href="#reponse-en-vitesse" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="reponse-en-vitesse">
+<h3><span class="section-number">3.2.3. </span>Réponse en vitesse<a class="headerlink" href="#reponse-en-vitesse" title="Permalink to this heading">#</a></h3>
 <p>La réponse en vitesse s’obtient en remarquant que: <span class="math notranslate nohighlight">\(\underline{V}= j \omega \overline{X}\)</span>. On observe alors systématiquement une résonance à la pulsation <span class="math notranslate nohighlight">\(\omega = \omega_0\)</span>.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -515,7 +407,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./notebook"
         },
         predefinedOutput: true
@@ -523,50 +415,107 @@ title="Print to PDF"
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="pendule_tp.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">2. </span>Travaux pratiques</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="pendule_tp.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Travaux pratiques</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="oscillations_tp.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="oscillations_tp.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title"><span class="section-number">4. </span>Travaux pratiques</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dispositif-experimental">3.1. Dispositif expérimental</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappel-theorique">3.2. Rappel théorique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mise-en-equation">3.2.1. Mise en équation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reponse-en-amplitude">3.2.2. Réponse en amplitude</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reponse-en-vitesse">3.2.3. Réponse en vitesse</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By C. Lacpatia<br/>
-  
-      &copy; Copyright 2021.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By C. Lacpatia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

@@ -1,47 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>8. Préliminaires &#8212; TP Mécanique et Thermodynamique</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>8. Préliminaires &#8212; TP Mécanique et Thermodynamique</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,57 +64,97 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebook/calorimetrie_preliminaire';</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/tp5_mecathermo/notebook/calorimetrie_preliminaire.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="9. Travaux pratiques" href="calorimetrie_tp.html" />
     <link rel="prev" title="7. Utilisation du logiciel CINERIS" href="ann_cineris.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">TP Mécanique et Thermodynamique</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+<a class="navbar-brand logo" href="../tp5_mecathermo.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">TP Mécanique et Thermodynamique</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -110,459 +163,240 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Pendule pesant
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Pendule pesant</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="pendule_preliminaire.html">
-   1. Préliminaires
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="pendule_tp.html">
-   2. Travaux pratiques
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="pendule_preliminaire.html">1. Préliminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pendule_tp.html">2. Travaux pratiques</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Oscillations forcées
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Oscillations forcées</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="oscillations_preliminaire.html">
-   3. Préliminaires
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="oscillations_tp.html">
-   4. Travaux pratiques
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="oscillations_preliminaire.html">3. Préliminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oscillations_tp.html">4. Travaux pratiques</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Chute libre
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Chute libre</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="chute_preliminaire.html">
-   5. Préliminaires
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chute_tp.html">
-   6. Travaux pratiques
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ann_cineris.html">
-   7. Utilisation du logiciel CINERIS
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="chute_preliminaire.html">5. Préliminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chute_tp.html">6. Travaux pratiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ann_cineris.html">7. Utilisation du logiciel CINERIS</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Calorimétrie
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calorimétrie</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   8. Préliminaires
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="calorimetrie_tp.html">
-   9. Travaux pratiques
-  </a>
- </li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Préliminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calorimetrie_tp.html">9. Travaux pratiques</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Changements d'état
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Changements d'état</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="chgetat_preliminaire.html">
-   10. Préliminaires
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chgetat_tp.html">
-   11. Travaux pratiques
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="chgetat_preliminaire.html">10. Préliminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chgetat_tp.html">11. Travaux pratiques</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/calorimetrie_preliminaire.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebook/calorimetrie_preliminaire.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/notebook/calorimetrie_preliminaire.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../_sources/notebook/calorimetrie_preliminaire.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#description-generale">
-   8.1. Description générale
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#methode-electrique">
-   8.2. Méthode électrique
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#methode-des-melanges">
-   8.3. Méthode des mélanges
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sonde-de-temperature">
-   8.4. Sonde de température
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#systeme-d-acquisition">
-   8.5. Système d’acquisition
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#utilisation-du-microcontrolleur">
-     8.5.1. Utilisation du microcontrolleur
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#branchements">
-       8.5.1.1. Branchements
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#programmation-de-la-carte">
-       8.5.1.2. Programmation de la carte
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#acquisition-grace-a-python">
-     8.5.2. Acquisition grâce à Python
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#modification-du-programme-python">
-       8.5.2.1. Modification du programme Python
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#test">
-       8.5.2.2. Test
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Préliminaires</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#description-generale">
-   8.1. Description générale
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#methode-electrique">
-   8.2. Méthode électrique
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#methode-des-melanges">
-   8.3. Méthode des mélanges
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sonde-de-temperature">
-   8.4. Sonde de température
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#systeme-d-acquisition">
-   8.5. Système d’acquisition
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#utilisation-du-microcontrolleur">
-     8.5.1. Utilisation du microcontrolleur
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#branchements">
-       8.5.1.1. Branchements
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#programmation-de-la-carte">
-       8.5.1.2. Programmation de la carte
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#acquisition-grace-a-python">
-     8.5.2. Acquisition grâce à Python
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#modification-du-programme-python">
-       8.5.2.1. Modification du programme Python
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#test">
-       8.5.2.2. Test
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Préliminaires</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description-generale">8.1. Description générale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methode-electrique">8.2. Méthode électrique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methode-des-melanges">8.3. Méthode des mélanges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sonde-de-temperature">8.4. Sonde de température</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#systeme-d-acquisition">8.5. Système d’acquisition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilisation-du-microcontrolleur">8.5.1. Utilisation du microcontrolleur</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#branchements">8.5.1.1. Branchements</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#programmation-de-la-carte">8.5.1.2. Programmation de la carte</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acquisition-grace-a-python">8.5.2. Acquisition grâce à Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#modification-du-programme-python">8.5.2.1. Modification du programme Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#test">8.5.2.2. Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="preliminaires">
-<h1><span class="section-number">8. </span>Préliminaires<a class="headerlink" href="#preliminaires" title="Permalink to this headline">#</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="preliminaires">
+<h1><span class="section-number">8. </span>Préliminaires<a class="headerlink" href="#preliminaires" title="Permalink to this heading">#</a></h1>
 <p>Ce TP comporte deux parties: d’une part l’étude du changement d’état liquide-vapeur du SF6 et d’autre part de la calorimétrie. L’organisation globale du TP nécessite une mise en commun. Faire deux groupes de deux binômes (=groupe de deux élèves). Dans chaque groupe, décidez quel binôme commence par la calorimétrie, et quel binôme commence par les changements d’état. La calorimétrie sera traitée identiquement par les deux groupes.</p>
 <p>La première partie du TP durera 1h30 puis inversion des binômes. La seconde durera aussi 1h30. La dernière heure devra servir à la mise en commun et à l’exploitation des résultats.</p>
-<div class="section" id="description-generale">
-<h2><span class="section-number">8.1. </span>Description générale<a class="headerlink" href="#description-generale" title="Permalink to this headline">#</a></h2>
+<section id="description-generale">
+<h2><span class="section-number">8.1. </span>Description générale<a class="headerlink" href="#description-generale" title="Permalink to this heading">#</a></h2>
 <p>Pour l’ensemble du TP, les mesures seront effectuées au sein d’un calorimètre: dispositif permettant d’isoler thermiquement de l’extérieur ce qui est placé à l’intérieur. Il est constitué d’un vase en verre double paroi brillantée sous vide d’air, recouvert d’une enveloppe extérieure en plastique (NE PAS RETIRER L’ENVELOPPE PLASTIQUE!) et d’un couvercle de fermeture. Le couvercle dispose d’un petit trou pour pouvoir y glisser une sonde de température. L’ensemble est également muni d’un agitateur permettant d’homogénéiser les fluides introduis dans le calorimètre. Enfin, un dispositif de thermoplongeurs (résistances plongeantes ne devant fonctionner que sous l’eau) peut être installé sur le couvercle.</p>
 <p>Dans tout le TP, par calorimètre, on considérera l’enceinte fermée et calorifugée constituée du vase intérieur, des protections plastiques et des accessoires nécessaires aux mesures et à cette expérience (thermomètre, agitateur, thermoplongeur). Le thermomètre utilisé sera une résistance électrique.</p>
-</div>
-<div class="section" id="methode-electrique">
-<h2><span class="section-number">8.2. </span>Méthode électrique<a class="headerlink" href="#methode-electrique" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="methode-electrique">
+<h2><span class="section-number">8.2. </span>Méthode électrique<a class="headerlink" href="#methode-electrique" title="Permalink to this heading">#</a></h2>
 <p>Le calorimètre possède une capacité thermique <span class="math notranslate nohighlight">\(C_{cal}\)</span>, éventuellement non négligeable devant celle du système placé à l’intérieur. Il est donc nécessaire de la mesurer avant toute autre chose. On propose l’utilisation de la méthode électrique. On notera <span class="math notranslate nohighlight">\(c_{eau}\)</span> la capacité thermique massique de l’eau liquide.</p>
 <p>On place dans le calorimètre une masse <span class="math notranslate nohighlight">\(m_{eau}\)</span> connu d’eau et on laisse l’ensemble {calorimètre+eau} établir un équilibre thermique à la température <span class="math notranslate nohighlight">\(T_i\)</span>. On place alors une résistance R au sein du liquide et on l’alimente pendant un temps <span class="math notranslate nohighlight">\(\Delta t\)</span> par une tension U constante. On mesure alors la température finale <span class="math notranslate nohighlight">\(T_f\)</span> lorsque celle-ci s’est stabilisée.</p>
 <p>Un bilan enthalpique (la transformation est monobare entre deux états d’équilibre) entre l’instant initial <span class="math notranslate nohighlight">\(t_i\)</span> et l’instant final <span class="math notranslate nohighlight">\(t_f\)</span> permet d’écrire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ac9de0f0-dcff-4f94-bfe1-f00e6b9d4cc6">
-<span class="eqno">(8.1)<a class="headerlink" href="#equation-ac9de0f0-dcff-4f94-bfe1-f00e6b9d4cc6" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-068b3b35-51be-4e14-80cb-a688ef24d79d">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-068b3b35-51be-4e14-80cb-a688ef24d79d" title="Permalink to this equation">#</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T_f-T_i)=\frac{U^2}{R}(t_f-t_i)
 \end{equation}\]</div>
 <p>Si le chauffage est suffisamment lent, on peut alors supposer la transformation quasi-statique et la relation précédente sera vraie durant toute la transformation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-65084cd5-0594-47ea-991b-6edb1ac50bff">
-<span class="eqno">(8.2)<a class="headerlink" href="#equation-65084cd5-0594-47ea-991b-6edb1ac50bff" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e7399a7e-1093-48e3-83c4-24d25a5fd3aa">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-e7399a7e-1093-48e3-83c4-24d25a5fd3aa" title="Permalink to this equation">#</a></span>\[\begin{equation}
   (C_{cal}+m_{eau} c_{eau})(T(t) -T_i)=\frac{U^2}{R}(t-t_i) 
 \end{equation}\]</div>
-</div>
-<div class="section" id="methode-des-melanges">
-<h2><span class="section-number">8.3. </span>Méthode des mélanges<a class="headerlink" href="#methode-des-melanges" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="methode-des-melanges">
+<h2><span class="section-number">8.3. </span>Méthode des mélanges<a class="headerlink" href="#methode-des-melanges" title="Permalink to this heading">#</a></h2>
 <p>Pour mesurer la chaleur latente de fusion de la glace, on va mélanger un système {eau + calorimètre} à la température <span class="math notranslate nohighlight">\(T_1\)</span> avec une masse <span class="math notranslate nohighlight">\(m_{glace}\)</span> de glace à la température de fusion <span class="math notranslate nohighlight">\(T_{fus}(Patm)=0^{\circ}\rm{C}\)</span>.</p>
 <p>En travaillant sur une transformation fictive (fonte isotherme totale des glaçons puis mise à l’équilibre thermique des deux systèmes), le bilan enthalpique s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6a313f84-7aea-4924-a08c-7db617a493a7">
-<span class="eqno">(8.3)<a class="headerlink" href="#equation-6a313f84-7aea-4924-a08c-7db617a493a7" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8270cde4-10ac-4994-858a-f1ba345a92a8">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-8270cde4-10ac-4994-858a-f1ba345a92a8" title="Permalink to this equation">#</a></span>\[\begin{equation}
   m_{glace} l_{f,glace} + m_{glace} c_{eau} (T_f -T_{fus})+(C_{cal}+c_{eau} m_{eau}) (T_f -T_1)=0
 \end{equation}\]</div>
-</div>
-<div class="section" id="sonde-de-temperature">
-<h2><span class="section-number">8.4. </span>Sonde de température<a class="headerlink" href="#sonde-de-temperature" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="sonde-de-temperature">
+<h2><span class="section-number">8.4. </span>Sonde de température<a class="headerlink" href="#sonde-de-temperature" title="Permalink to this heading">#</a></h2>
 <p>La mesure de la température sera réalisée par une sonde CTN plongée dans l’eau qui peut-être fixée dans le calorimètre. La sonde est une une thermistance, c’est-à-dire une résistance dont la valeur <span class="math notranslate nohighlight">\(R(T)\)</span> dépend de la température. L’étude de la thermistance montre que la résistance suit le modèle :</p>
 <div class="math notranslate nohighlight">
 \[
@@ -580,9 +414,9 @@ R(T) &amp;= R_1 \left(\frac{E}{u_{R_1}} - 1\right)
 \[
 T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R(T)}{R_0}\right)}^{-1}
 \]</div>
-</div>
-<div class="section" id="systeme-d-acquisition">
-<h2><span class="section-number">8.5. </span>Système d’acquisition<a class="headerlink" href="#systeme-d-acquisition" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="systeme-d-acquisition">
+<h2><span class="section-number">8.5. </span>Système d’acquisition<a class="headerlink" href="#systeme-d-acquisition" title="Permalink to this heading">#</a></h2>
 <p>Des systèmes d’acquisition complets existent mais nous allons utiliser ici un système “fait maison” pour comprendre les différents éléments d’un système d’acquisition. C’est aussi l’occasion de manipuler un microcontrolleur.</p>
 <p>Le système d’acquisition sera séparé en deux parties :</p>
 <ul class="simple">
@@ -602,19 +436,19 @@ T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R(T)}{R_0}\right)}^{-1}
 </ul>
 </li>
 </ul>
-<div class="section" id="utilisation-du-microcontrolleur">
-<span id="arduino-pres"></span><h3><span class="section-number">8.5.1. </span>Utilisation du microcontrolleur<a class="headerlink" href="#utilisation-du-microcontrolleur" title="Permalink to this headline">#</a></h3>
-<div class="section" id="branchements">
-<h4><span class="section-number">8.5.1.1. </span>Branchements<a class="headerlink" href="#branchements" title="Permalink to this headline">#</a></h4>
+<section id="utilisation-du-microcontrolleur">
+<span id="arduino-pres"></span><h3><span class="section-number">8.5.1. </span>Utilisation du microcontrolleur<a class="headerlink" href="#utilisation-du-microcontrolleur" title="Permalink to this heading">#</a></h3>
+<section id="branchements">
+<h4><span class="section-number">8.5.1.1. </span>Branchements<a class="headerlink" href="#branchements" title="Permalink to this heading">#</a></h4>
 <p>Les branchements sont simplifiées par l’utilisation du shield Grove.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Si ce dernier n’est pas déjà fixé sur la carte Arduino. Placez le shield sur la carte. <strong>Faire attention à ce que les broches soient bien placées au dessus des trous des bornes avant d’enfoncer la carte de manière à ne pas tordre une broche, ce qui conduirait à un disfonctionnement de la carte (fragile).</strong></p></li>
 <li><p>Le microcontrolleur Arduino peut réaliser deux types de mesures : des mesures logiques (0 ou 1) à l’aide des entrées D1, D2, … et des mesures analogiques (tension entre 0 et 5V) grâce aux bornes A0, A1, … On utilisera donc ces dernières. Brancher la connectique de la sonde (appelée connectique Grove) sur l’une des entrées analogiques (PIN) en notant le numéro (A0, A1, …) correspondant.</p></li>
 <li><p>Installer la sonde dans le montage voulu (ici le montage de calorimétrie) puis brancher la carte Arduino à l’ordinateur. La carte devrait s’allumer signalant qu’elle alimentée.</p></li>
 </ol>
-</div>
-<div class="section" id="programmation-de-la-carte">
-<h4><span class="section-number">8.5.1.2. </span>Programmation de la carte<a class="headerlink" href="#programmation-de-la-carte" title="Permalink to this headline">#</a></h4>
+</section>
+<section id="programmation-de-la-carte">
+<h4><span class="section-number">8.5.1.2. </span>Programmation de la carte<a class="headerlink" href="#programmation-de-la-carte" title="Permalink to this heading">#</a></h4>
 <p>Pour l’instant, le microcontrolleur est alimenté mais il ne remplit pas son rôle, il réalise le dernier programme enregistré qui n’est probablement pas le bon. Il faut <em>programmer le microcontrolleur</em> en <em>téléversant</em> un programme dans sa mémoire.</p>
 <p>La syntaxe utilisée par les microcontrolleurs Arduino est un dérivé du C++ et il n’est pas nécessaire de comprendre ce langage pour le TP. Vous devez par contre téléverser le programme dans Arduino.</p>
 <div class="admonition note">
@@ -622,8 +456,8 @@ T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R(T)}{R_0}\right)}^{-1}
 <p>Le logiciel Arduino sera disponible sur les ordinateurs de la salle de TP. Sachez néanmoins qu’il est libre et peut-être <a class="reference external" href="https://www.arduino.cc/en/software">télécharger</a> sur le site officiel et installé sur votre propre ordinateur.</p>
 <p><em>Attention, si vous désirez utiliser votre propre ordinateur pour brancher la carte Arduino en TP. Il faudra installer la bibliothèque <code class="docutils literal notranslate"><span class="pre">pyserial</span></code> qui n’est pas installée par défaut par Anaconda.</em> La procédure d’installation n’est pas donnée ici.</p>
 </div>
-<ol class="simple">
-<li><p>Sur le <a class="reference external" href="https://stanislas.edunao.com/mod/folder/view.php?id=13511&amp;forceview=1">site</a>, télécharger le dossier complet (il sera sous forme d’archive qu’il faudra décompresser). Vous y trouvez deux programmes Python sur lesquels nous reviendrons par la suite et un dossier <code class="docutils literal notranslate"><span class="pre">sonde_ctn</span></code> contenant un fichier <code class="docutils literal notranslate"><span class="pre">.ino</span></code> : c’est le programme que vous allez téléverser dans la carte.</p></li>
+<ol class="arabic simple">
+<li><p>Sur le <a class="reference external" href="https://moodlecpge.stanislas.fr/mod/folder/view.php?id=96">site</a>, télécharger le dossier complet (il sera sous forme d’archive qu’il faudra décompresser). Vous y trouvez deux programmes Python sur lesquels nous reviendrons par la suite et un dossier <code class="docutils literal notranslate"><span class="pre">sonde_ctn</span></code> contenant un fichier <code class="docutils literal notranslate"><span class="pre">.ino</span></code> : c’est le programme que vous allez téléverser dans la carte.</p></li>
 <li><p>Ouvrir le logiciel Arduino puis ouvrir le fichier <code class="docutils literal notranslate"><span class="pre">sonde_ctn.ino</span></code> que vous venez de télécharger.</p></li>
 <li><p>Il n’est pas nécessaire de comprendre ce programme, vous devez juste repérer la ligne où est définie le PIN de branchement de la sonde (A0, A1…) grâce aux commentaires. Remplacer le par celui où vous avez branché la sonde.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Vérifier</span></code> (ou plutôt demander au logiciel de vérifier) que le programme est correct (premier bouton de la barre d’outil). S’il n’y a pas de message d’erreur, passez à l’étape suivante, sinon appeler l’enseignant.</p></li>
@@ -642,10 +476,10 @@ T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R(T)}{R_0}\right)}^{-1}
 <li><p>Envoi de la donnée ou utilisation (si le microcontrolleur doit contrôler un actionneur)</p></li>
 </ul>
 </div>
-</div>
-</div>
-<div class="section" id="acquisition-grace-a-python">
-<h3><span class="section-number">8.5.2. </span>Acquisition grâce à Python<a class="headerlink" href="#acquisition-grace-a-python" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="acquisition-grace-a-python">
+<h3><span class="section-number">8.5.2. </span>Acquisition grâce à Python<a class="headerlink" href="#acquisition-grace-a-python" title="Permalink to this heading">#</a></h3>
 <p>On pourrait se limiter au moniteur série pour recueillir la température initiale et finale mais on va faire mieux au moyen de Python : on va afficher en temps réel <span class="math notranslate nohighlight">\(T(t)\)</span>.</p>
 <p>La bibliothèques <code class="docutils literal notranslate"><span class="pre">pyserial</span></code> permet à un script Python de se connecter à un port série (entrée de l’ordinateur pemettant la communication avec un appareil, ici Arduino) pour recevoir les données envoyées par le microcontrolleur. On ne présente pas ici le fonctionnement de cette bibliothèque.</p>
 <p>Dans le dossier que vous avez téléchargé, vous trouverez deux fichiers Python :</p>
@@ -657,15 +491,15 @@ T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R(T)}{R_0}\right)}^{-1}
 <p class="admonition-title">Attention</p>
 <p>Le fichier que vous exécuterez fait appel au premier. Il <strong>faut donc que les deux fichiers soient bien enregistrés dans le même répertoire.</strong></p>
 </div>
-<div class="section" id="modification-du-programme-python">
-<h4><span class="section-number">8.5.2.1. </span>Modification du programme Python<a class="headerlink" href="#modification-du-programme-python" title="Permalink to this headline">#</a></h4>
+<section id="modification-du-programme-python">
+<h4><span class="section-number">8.5.2.1. </span>Modification du programme Python<a class="headerlink" href="#modification-du-programme-python" title="Permalink to this heading">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Environnement python
 <strong>Lorsque vous lancez pyzo, allez dans <code class="docutils literal notranslate"><span class="pre">Shell</span></code> puis <code class="docutils literal notranslate"><span class="pre">Configuration</span> <span class="pre">des</span> <span class="pre">shells</span></code> et dans le menu déroulant <code class="docutils literal notranslate"><span class="pre">exe</span></code>, choisir le chemin vers l’executable python contenant <code class="docutils literal notranslate"><span class="pre">envprepa</span></code>.</strong> Sans quoi, vous n’aurez pas accès à la bibliothèques <code class="docutils literal notranslate"><span class="pre">pyserial</span></code>.</p>
 </div>
 <p>La majeure partie du programme est déjà écrite. Elle est divisée en trois parties :</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Les fonctions permettant de passer de la représentation binaire à la tension en volt (<code class="docutils literal notranslate"><span class="pre">CNA</span></code>), de la tension <span class="math notranslate nohighlight">\(u\)</span> à la résistance <span class="math notranslate nohighlight">\(R(T)\)</span> (<code class="docutils literal notranslate"><span class="pre">Rdiv</span></code>) puis de la valeur de la résistance à la température <span class="math notranslate nohighlight">\(T\)</span> (<code class="docutils literal notranslate"><span class="pre">Tth</span></code>).</p>
 <ul class="simple">
 <li><p>Modifier les valeurs numériques des différentes grandeurs en fonction des données précédentes.</p></li>
@@ -680,18 +514,18 @@ T = {\left(\frac{1}{T_0} + \frac{1}{\beta} \ln \frac{R(T)}{R_0}\right)}^{-1}
 <p class="admonition-title">Important</p>
 <p>Une fois l’exécution du script lancé, vous ne pourrez plus modifié les paramètres et l’acquisition est longue donc vérifiez que tout est bon avant de lancer le programme.</p>
 </div>
-</div>
-<div class="section" id="test">
-<h4><span class="section-number">8.5.2.2. </span>Test<a class="headerlink" href="#test" title="Permalink to this headline">#</a></h4>
+</section>
+<section id="test">
+<h4><span class="section-number">8.5.2.2. </span>Test<a class="headerlink" href="#test" title="Permalink to this heading">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Test du programme
 Avant de réaliser l’acquisition de 15 minutes comme demandé dans le TP, lancer une acquisition de quelques secondes une fois le montage réalisé pour vérifier que le programme fonctionne correctement.</p>
 </div>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -705,7 +539,7 @@ Avant de réaliser l’acquisition de 15 minutes comme demandé dans le TP, lanc
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./notebook"
         },
         predefinedOutput: true
@@ -713,50 +547,117 @@ Avant de réaliser l’acquisition de 15 minutes comme demandé dans le TP, lanc
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="ann_cineris.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">7. </span>Utilisation du logiciel CINERIS</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ann_cineris.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Utilisation du logiciel CINERIS</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="calorimetrie_tp.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="calorimetrie_tp.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title"><span class="section-number">9. </span>Travaux pratiques</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description-generale">8.1. Description générale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methode-electrique">8.2. Méthode électrique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methode-des-melanges">8.3. Méthode des mélanges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sonde-de-temperature">8.4. Sonde de température</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#systeme-d-acquisition">8.5. Système d’acquisition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilisation-du-microcontrolleur">8.5.1. Utilisation du microcontrolleur</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#branchements">8.5.1.1. Branchements</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#programmation-de-la-carte">8.5.1.2. Programmation de la carte</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acquisition-grace-a-python">8.5.2. Acquisition grâce à Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#modification-du-programme-python">8.5.2.1. Modification du programme Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#test">8.5.2.2. Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By C. Lacpatia<br/>
-  
-      &copy; Copyright 2021.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By C. Lacpatia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
